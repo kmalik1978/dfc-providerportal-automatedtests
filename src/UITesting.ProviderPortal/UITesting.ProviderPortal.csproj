@@ -54,45 +54,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Features\Course Management\COUR-107-SearchonYourCourses.feature.cs">
-      <AutoGen>True</AutoGen>
+    <Compile Include="Features\Provider Management\DFC-6494 Search Provider.feature.cs">
+      <DependentUpon>DFC-6494 Search Provider.feature</DependentUpon>
       <DesignTime>True</DesignTime>
-      <DependentUpon>COUR-107-SearchonYourCourses.feature</DependentUpon>
+      <AutoGen>True</AutoGen>
     </Compile>
-    <Compile Include="Features\Course Management\COUR-150 Edit Course National Flag.feature.cs">
-      <DependentUpon>COUR-150 Edit Course National Flag.feature</DependentUpon>
-      <AutoGen>True</AutoGen>
+    <Compile Include="Features\Qualification Management\DFC-4806 Search For Qualification.feature.cs">
+      <DependentUpon>DFC-4806 Search For Qualification.feature</DependentUpon>
       <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
-    <Compile Include="Features\Course Management\DFC-4830 Edit Course Venue.feature.cs">
-      <DependentUpon>DFC-4830 Edit Course Venue.feature</DependentUpon>
-      <AutoGen>True</AutoGen>
+    <Compile Include="Features\Venue Management\DFC-5624 Add Venue - Commit Add Venue Record.feature.cs">
+      <DependentUpon>DFC-5624 Add Venue - Commit Add Venue Record.feature</DependentUpon>
       <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="Features\Course Management\DFC-4827 Edit Course Name.feature.cs">
       <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DFC-4827 Edit Course Name.feature</DependentUpon>
-    </Compile>
-    <Compile Include="Features\Course Management\DFC-6074 AddCourse - Page 2.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DFC-6074 AddCourse - Page 2.feature</DependentUpon>
-    </Compile>
-    <Compile Include="Features\Course Management\DFC-5843 Add Course - Add Part 1 of Description.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DFC-5843 Add Course - Add Part 1 of Description.feature</DependentUpon>
-    </Compile>
-    <Compile Include="Features\Course Management\DFC-6185_6186 View URL_CostDesc.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DFC-6185_6186 View URL_CostDesc.feature</DependentUpon>
-    </Compile>
-    <Compile Include="Features\Course Management\DFC-7094 Edit Course Description.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DFC-7094 Edit Course Description.feature</DependentUpon>
     </Compile>
     <Compile Include="Models\Venue Management\Venue_Management.cs" />
     <Compile Include="Pages\Apprenticeships\ClassroomAndEmployerDeliveryOptionPage.cs" />
@@ -246,37 +221,17 @@
       <DependentUpon>App.config</DependentUpon>
       <IsTransformFile>true</IsTransformFile>
     </None>
-    <None Include="Features\Course Management\COUR-107-SearchonYourCourses.feature">
+    <None Include="Features\Provider Management\DFC-6494 Search Provider.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>COUR-107-SearchonYourCourses.feature.cs</LastGenOutput>
+      <LastGenOutput>DFC-6494 Search Provider.feature.cs</LastGenOutput>
     </None>
-    <None Include="Features\Course Management\COUR-150 Edit Course National Flag.feature">
+    <None Include="Features\Qualification Management\DFC-4806 Search For Qualification.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>COUR-150 Edit Course National Flag.feature.cs</LastGenOutput>
+      <LastGenOutput>DFC-4806 Search For Qualification.feature.cs</LastGenOutput>
     </None>
-    <None Include="Features\Course Management\DFC-4830 Edit Course Venue.feature">
+    <None Include="Features\Venue Management\DFC-5624 Add Venue - Commit Add Venue Record.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>DFC-4830 Edit Course Venue.feature.cs</LastGenOutput>
-    </None>
-    <None Include="Features\Course Management\DFC-4827 Edit Course Name.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>DFC-4827 Edit Course Name.feature.cs</LastGenOutput>
-    </None>
-    <None Include="Features\Course Management\DFC-6074 AddCourse - Page 2.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>DFC-6074 AddCourse - Page 2.feature.cs</LastGenOutput>
-    </None>
-    <None Include="Features\Course Management\DFC-5843 Add Course - Add Part 1 of Description.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>DFC-5843 Add Course - Add Part 1 of Description.feature.cs</LastGenOutput>
-    </None>
-    <None Include="Features\Course Management\DFC-6185_6186 View URL_CostDesc.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>DFC-6185_6186 View URL_CostDesc.feature.cs</LastGenOutput>
-    </None>
-    <None Include="Features\Course Management\DFC-7094 Edit Course Description.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>DFC-7094 Edit Course Description.feature.cs</LastGenOutput>
+      <LastGenOutput>DFC-5624 Add Venue - Commit Add Venue Record.feature.cs</LastGenOutput>
     </None>
     <None Include="Test Data\BulkUpload_1000courses.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
