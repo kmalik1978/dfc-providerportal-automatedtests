@@ -18,8 +18,8 @@ namespace UITesting.ProviderPortal.Features.VenueManagement
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.4.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("COUR-11 Delete Venue")]
-    public partial class COUR_11DeleteVenueFeature
+    [NUnit.Framework.DescriptionAttribute("COUR-11 Delete a Venue")]
+    public partial class COUR_11DeleteAVenueFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -31,7 +31,7 @@ namespace UITesting.ProviderPortal.Features.VenueManagement
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "COUR-11 Delete Venue", "\tIn order to manage my venues\r\n\tAs a provider\r\n\tI want to be able to delete venue" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "COUR-11 Delete a Venue", "\tIn order to manage my venues\r\n\tAs a provider\r\n\tI want to be able to delete venue" +
                     "s", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }

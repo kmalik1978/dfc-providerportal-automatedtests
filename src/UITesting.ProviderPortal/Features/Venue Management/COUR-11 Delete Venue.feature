@@ -1,4 +1,4 @@
-﻿Feature: COUR-11 Delete Venue
+﻿Feature: COUR-11 Delete a Venue
 	In order to manage my venues
 	As a provider
 	I want to be able to delete venues
