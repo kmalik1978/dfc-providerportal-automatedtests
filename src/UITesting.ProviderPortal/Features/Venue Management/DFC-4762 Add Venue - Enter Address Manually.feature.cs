@@ -80,7 +80,7 @@ namespace UITesting.ProviderPortal.Features.VenueManagement
 #line 9
  testRunner.Then("I am logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 10
- testRunner.Given("I have searched for UKPRN \"10002815\" and clicked search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I have searched for UKPRN \"10040838\" and clicked search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 11
  testRunner.When("I click to view my courses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 13
@@ -99,11 +99,11 @@ namespace UITesting.ProviderPortal.Features.VenueManagement
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("User enters all valid details")]
+        [NUnit.Framework.DescriptionAttribute("DFC-4762 User enters all valid details")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void UserEntersAllValidDetails()
+        public virtual void DFC_4762UserEntersAllValidDetails()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User enters all valid details", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-4762 User enters all valid details", null, new string[] {
                         "CI"});
 #line 21
 this.ScenarioInitialize(scenarioInfo);
@@ -127,11 +127,11 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("User does not enter Venue Name")]
+        [NUnit.Framework.DescriptionAttribute("DFC-4762 User does not enter Venue Name")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void UserDoesNotEnterVenueName()
+        public virtual void DFC_4762UserDoesNotEnterVenueName()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User does not enter Venue Name", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-4762 User does not enter Venue Name", null, new string[] {
                         "CI"});
 #line 29
 this.ScenarioInitialize(scenarioInfo);
@@ -149,11 +149,11 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("User does not enter Address Line 1")]
+        [NUnit.Framework.DescriptionAttribute("DFC-4762 User does not enter Address Line 1")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void UserDoesNotEnterAddressLine1()
+        public virtual void DFC_4762UserDoesNotEnterAddressLine1()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User does not enter Address Line 1", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-4762 User does not enter Address Line 1", null, new string[] {
                         "CI"});
 #line 34
 this.ScenarioInitialize(scenarioInfo);
@@ -171,11 +171,11 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("User does not enter Town or City")]
+        [NUnit.Framework.DescriptionAttribute("DFC-4762 User does not enter Town or City")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void UserDoesNotEnterTownOrCity()
+        public virtual void DFC_4762UserDoesNotEnterTownOrCity()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User does not enter Town or City", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-4762 User does not enter Town or City", null, new string[] {
                         "CI"});
 #line 39
 this.ScenarioInitialize(scenarioInfo);
@@ -193,11 +193,11 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("User does not enter PostCode")]
+        [NUnit.Framework.DescriptionAttribute("DFC-4762 User does not enter PostCode")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void UserDoesNotEnterPostCode()
+        public virtual void DFC_4762UserDoesNotEnterPostCode()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User does not enter PostCode", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-4762 User does not enter PostCode", null, new string[] {
                         "CI"});
 #line 44
 this.ScenarioInitialize(scenarioInfo);
@@ -215,11 +215,11 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("User does not enter Valid PostCode")]
+        [NUnit.Framework.DescriptionAttribute("DFC-4762 User does not enter Valid PostCode")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void UserDoesNotEnterValidPostCode()
+        public virtual void DFC_4762UserDoesNotEnterValidPostCode()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User does not enter Valid PostCode", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-4762 User does not enter Valid PostCode", null, new string[] {
                         "CI"});
 #line 49
 this.ScenarioInitialize(scenarioInfo);
@@ -231,8 +231,7 @@ this.FeatureBackground();
 #line 51
  testRunner.And("I Click Continue", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 52
- testRunner.Then("a valid postcode validation message should be displayed \"Postcode must be a valid" +
-                    " format and only include letters a to z, numbers and spaces\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("a valid postcode validation message should be displayed \"Enter a real postcode\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

@@ -23,34 +23,33 @@ Scenario: DFC-6737 Bulk Upload Status of upload Courses - No Errors
 @CI
 Scenario: DFC-7272 Bulk Upload Status of upload Courses - Errors
 	Given I have searched for UKPRN "10036802" and clicked search
-	When I click to view my courses
+	#When I click to view my courses
 	Given I have accessed the Bulk Upload page
-	When I click Choose a File BulkUpload_InvalidDuration.csv to upload
+	When I click Choose a File BulkUpload_AttendancePatternNone.csv to upload
 	And I click Upload File leading to course errors
 	Then I am on the Fix and publish bulk upload page
 
 @CI
 Scenario: DFC-6738 Bulk Upload Stage 1 - Pass
 	Given I have searched for UKPRN "10036802" and clicked search
-	When I click to view my courses
+	#When I click to view my courses
 	Given I have accessed the Bulk Upload page
-	When I click Choose a File BulkUpload_InvalidDuration.csv to upload
+	When I click Choose a File BulkUpload_AttendancePatternNone.csv to upload
 	And I click Upload File leading to course errors
 	Then I am on the Fix and publish bulk upload page
 
 @CI
 Scenario: DFC-6738 Bulk Upload Stage 1 - File Not CSV
 	Given I have searched for UKPRN "10036802" and clicked search
-	When I click to view my courses
+	#When I click to view my courses
 	Given I have accessed the Bulk Upload page
 	When I click Choose a File BulkUploadNotCSV.txt to upload
 	And I click Upload File leading to stage1 errors
 	Then the error The selected file must be a csv is displayed
-
 @CI
 Scenario: DFC-6738 Bulk Upload Stage 1 - File Empty
 	Given I have searched for UKPRN "10036802" and clicked search
-	When I click to view my courses
+	#When I click to view my courses
 	Given I have accessed the Bulk Upload page
 	When I click Choose a File BulkUpload_Empty.csv to upload
 	And I click Upload File leading to stage1 errors
@@ -59,115 +58,35 @@ Scenario: DFC-6738 Bulk Upload Stage 1 - File Empty
 @CI
 Scenario: DFC-6738 Bulk Upload Stage 1 - Missing Columns
 	Given I have searched for UKPRN "10036802" and clicked search
-	When I click to view my courses
+	#When I click to view my courses
 	Given I have accessed the Bulk Upload page
 	When I click Choose a File BulkUpload_MissingColumns.csv to upload
 	And I click Upload File leading to stage1 errors
 	Then the error Fields with names 'COURSE_NAME', 'DURATION', 'WHAT_YOU_WILL_LEARN' do not exist is displayed in error summary
 
 @CI
-Scenario: DFC-7379 Bulk Upload LARS Checks - Invalid LARS
+Scenario: DFC-7379 Bulk Upload LARS Checks - Invalid LARS BUG COUR-1134
 	Given I have searched for UKPRN "10036802" and clicked search
-	When I click to view my courses
+	#When I click to view my courses
 	Given I have accessed the Bulk Upload page
-	When I click Choose a File BulkUpload_InvalidLARS.csv to upload
+	When I click Choose a File BulkUpload_LARSInvalid.csv to upload
 	And I click Upload File leading to stage1 errors
-	Then the error Line 2, LARS_QAN = 60333079 invalid LARS is displayed in error summary
+	Then the error Line 2, LARS_QAN = 60333079, invalid LARS is displayed in error summary
 
 @CI
 Scenario: DFC-7379 Bulk Upload LARS Checks - Expired LARS
 	Given I have searched for UKPRN "10036802" and clicked search
-	When I click to view my courses
+	#When I click to view my courses
 	Given I have accessed the Bulk Upload page
-	When I click Choose a File BulkUpload_ExpiredLARS.csv to upload
+	When I click Choose a File BulkUpload_LARSExpired.csv to upload
 	And I click Upload File leading to stage1 errors
 	Then the error Line 2, LARS_QAN = 50084914 expired LARS is displayed in error summary
 
 @CI
 Scenario: DFC-7379 Bulk Upload LARS Checks - Missing LARS
 	Given I have searched for UKPRN "10036802" and clicked search
-	When I click to view my courses
+	#When I click to view my courses
 	Given I have accessed the Bulk Upload page
-	When I click Choose a File BulkUpload_MissingLARS.csv to upload
+	When I click Choose a File BulkUpload_LARSMissing.csv to upload
 	And I click Upload File leading to stage1 errors
 	Then the error Line 2, LARS_QAN = => LARS is missing. is displayed in error summary
-
-@CI
-Scenario: DFC-7224 Bulk Upload Cancel Course Edit
-	Given I have searched for UKPRN "10036354" and clicked search
-	When I click to view my courses
-	Given I have accessed the Bulk Upload page
-	When I click Choose a File BulkUpload_CancelTest.csv to upload
-	And I click Upload File leading to course errors
-	Then I am on the Fix and publish bulk upload page
-	When I click fix against the first Course
-	Then I click on Cancel to cancel edit
-	Then I am on the Fix and publish bulk upload page
-
-@CI
-Scenario: DFC-7224 Bulk Upload Cancel Course Run Edit
-	Given I have searched for UKPRN "10036354" and clicked search
-	When I click to view my courses
-	Given I have accessed the Bulk Upload page
-	When I click Choose a File BulkUpload_CancelTest.csv to upload
-	And I click Upload File leading to course errors
-	Then I am on the Fix and publish bulk upload page
-	When I click fix against the first Course Run
-	Then I click on Cancel to cancel edit course run
-	Then I am on the Fix and publish bulk upload page
-
-@CI
-Scenario: DFC-7224 Bulk Upload Save Course Edit
-	Given I have searched for UKPRN "10036789" and clicked search
-	When I click to view my courses
-	Given I have accessed the Bulk Upload page
-	When I click Choose a File BulkUpload_SaveTest.csv to upload
-	And I click Upload File leading to course errors
-	Then I am on the Fix and publish bulk upload page
-	When I click fix against the first Course i want edit and save
-	And I edit bulk upload course description Semi-qualified (people)
-	And I click to Save the Course details
-	Then I am on the Fix and publish bulk upload page
-
-@CI
-Scenario: DFC-7225 Bulk Upload Save Course Run Edit
-	Given I have searched for UKPRN "10036789" and clicked search
-	When I click to view my courses
-	Given I have accessed the Bulk Upload page
-	When I click Choose a File BulkUpload_SaveTest.csv to upload
-	And I click Upload File leading to course errors
-	Then I am on the Fix and publish bulk upload page
-	When I click fix against the first Course Run i want edit and save
-	Given I have changed the course venue to dudley 2
-	When I edit bulk upload course cost 9
-	And I click to Save the Course Run details
-	Then I am on the Fix and publish bulk upload page
-
-@CI
-Scenario: DFC-6719 Bulk Upload Edit uploaded Course
-	Given I have searched for UKPRN "10036789" and clicked search
-	When I click to view my courses
-	Given I have accessed the Bulk Upload page
-	When I click Choose a File BulkUpload_EditTest.csv to upload
-	And I click Upload File leading to course errors
-	Then I am on the Fix and publish bulk upload page
-	When I click fix against the first Course i want edit and save
-	And I edit bulk upload course description Semi-qualified (people)
-	And I edit bulk upload course entry requirements None Specified
-	And I click to Save the Course details
-	Then I am on the Fix and publish bulk upload page
-
-@CI
-Scenario: DFC-6736 Bulk Upload Edit uploaded Course Run
-	Given I have searched for UKPRN "10036789" and clicked search
-	When I click to view my courses
-	Given I have accessed the Bulk Upload page
-	When I click Choose a File BulkUpload_EditTest.csv to upload
-	And I click Upload File leading to course errors
-	Then I am on the Fix and publish bulk upload page
-	When I click fix against the first Course Run i want edit and save
-	And I edit bulk upload course name Test Course 100
-	Given I have changed the course venue to dudley 2
-	When I edit bulk upload course cost 9
-	And I click to Save the Course Run details
-	Then I am on the Fix and publish bulk upload page

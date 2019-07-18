@@ -86,7 +86,7 @@ namespace UITesting.ProviderPortal.Features.Apprenticeships
 #line 12
  testRunner.Given("I have accessed the Apprenticeship Search page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 13
- testRunner.When("I use apprenticeship search to search for Plumber", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I use apprenticeship search to search for Plumbing", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 14
  testRunner.Then("the Results are displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 15
@@ -119,11 +119,11 @@ namespace UITesting.ProviderPortal.Features.Apprenticeships
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Select a location and Day Release and click SaveandContinue")]
+        [NUnit.Framework.DescriptionAttribute("COUR-387 Select a location and Day Release and click SaveandContinue")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void SelectALocationAndDayReleaseAndClickSaveandContinue()
+        public virtual void COUR_387SelectALocationAndDayReleaseAndClickSaveandContinue()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Select a location and Day Release and click SaveandContinue", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-387 Select a location and Day Release and click SaveandContinue", null, new string[] {
                         "CI"});
 #line 29
 this.ScenarioInitialize(scenarioInfo);
@@ -143,11 +143,11 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Select a location and Block Release and click SaveandContinue")]
+        [NUnit.Framework.DescriptionAttribute("COUR-387 Select a location and Block Release and click SaveandContinue")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void SelectALocationAndBlockReleaseAndClickSaveandContinue()
+        public virtual void COUR_387SelectALocationAndBlockReleaseAndClickSaveandContinue()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Select a location and Block Release and click SaveandContinue", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-387 Select a location and Block Release and click SaveandContinue", null, new string[] {
                         "CI"});
 #line 35
 this.ScenarioInitialize(scenarioInfo);
@@ -167,13 +167,13 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Select a location and select both Day and Block Release and click SaveandContinue" +
-            "")]
+        [NUnit.Framework.DescriptionAttribute("COUR-387 Select a location and select both Day and Block Release and click Savean" +
+            "dContinue")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void SelectALocationAndSelectBothDayAndBlockReleaseAndClickSaveandContinue()
+        public virtual void COUR_387SelectALocationAndSelectBothDayAndBlockReleaseAndClickSaveandContinue()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Select a location and select both Day and Block Release and click SaveandContinue" +
-                    "", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-387 Select a location and select both Day and Block Release and click Savean" +
+                    "dContinue", null, new string[] {
                         "CI"});
 #line 41
 this.ScenarioInitialize(scenarioInfo);
@@ -188,6 +188,209 @@ this.FeatureBackground();
  testRunner.When("I click SaveandContinue", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 45
  testRunner.Then("the Apprenticeship Summary Screen should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("COUR-387 Select a location and Day Release and click SaveandAddAnother")]
+        [NUnit.Framework.CategoryAttribute("CI")]
+        public virtual void COUR_387SelectALocationAndDayReleaseAndClickSaveandAddAnother()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-387 Select a location and Day Release and click SaveandAddAnother", null, new string[] {
+                        "CI"});
+#line 47
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 6
+this.FeatureBackground();
+#line 48
+ testRunner.Given("I have selected a venue from the Location dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 49
+ testRunner.And("I have selected Day release as delivery mode", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 50
+ testRunner.When("I click SaveandAddAnother", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 51
+ testRunner.Then("the Apprenticeship delivery Screen should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("COUR-387 Select a location and Block Release and click SaveandAddAnother")]
+        [NUnit.Framework.CategoryAttribute("CI")]
+        public virtual void COUR_387SelectALocationAndBlockReleaseAndClickSaveandAddAnother()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-387 Select a location and Block Release and click SaveandAddAnother", null, new string[] {
+                        "CI"});
+#line 53
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 6
+this.FeatureBackground();
+#line 54
+ testRunner.Given("I have selected a venue from the Location dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 55
+ testRunner.And("I have selected Block release as delivery mode", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 56
+ testRunner.When("I click SaveandAddAnother", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 57
+ testRunner.Then("the Apprenticeship delivery Screen should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("COUR-387 Select a location and select both Day and Block Release and click Savean" +
+            "dAddAnother")]
+        [NUnit.Framework.CategoryAttribute("CI")]
+        public virtual void COUR_387SelectALocationAndSelectBothDayAndBlockReleaseAndClickSaveandAddAnother()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-387 Select a location and select both Day and Block Release and click Savean" +
+                    "dAddAnother", null, new string[] {
+                        "CI"});
+#line 59
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 6
+this.FeatureBackground();
+#line 60
+ testRunner.Given("I have selected a venue from the Location dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 61
+ testRunner.And("I have selected Day Release and Block release as delivery mode", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 62
+ testRunner.When("I click SaveandAddAnother", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 63
+ testRunner.Then("the Apprenticeship delivery Screen should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("COUR-387 Select a location and select multiple locations")]
+        [NUnit.Framework.CategoryAttribute("CI")]
+        public virtual void COUR_387SelectALocationAndSelectMultipleLocations()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-387 Select a location and select multiple locations", null, new string[] {
+                        "CI"});
+#line 65
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 6
+this.FeatureBackground();
+#line 66
+ testRunner.Given("I have selected a venue from the Location dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 67
+ testRunner.And("I have selected Day release as delivery mode", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 68
+ testRunner.When("I click SaveandAddAnother", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 69
+ testRunner.Then("the Apprenticeship delivery Screen should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 70
+ testRunner.Given("I have selected a venue from the Location dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 71
+ testRunner.And("I have selected Block release as delivery mode", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 72
+ testRunner.When("I click SaveandContinue", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 73
+ testRunner.Then("the Apprenticeship Summary Screen should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("COUR-387 Display Error Message-Location")]
+        [NUnit.Framework.CategoryAttribute("CI")]
+        public virtual void COUR_387DisplayErrorMessage_Location()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-387 Display Error Message-Location", null, new string[] {
+                        "CI"});
+#line 75
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 6
+this.FeatureBackground();
+#line 76
+ testRunner.Given("I have not selected a venue", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 77
+ testRunner.And("I have selected Block release as delivery mode", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 78
+ testRunner.When("I click SaveandAddAnother", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 79
+ testRunner.Then("Location error message should be displayed \"Select location\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("COUR-387 Display Error Message-Delivery Mode")]
+        [NUnit.Framework.CategoryAttribute("CI")]
+        public virtual void COUR_387DisplayErrorMessage_DeliveryMode()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-387 Display Error Message-Delivery Mode", null, new string[] {
+                        "CI"});
+#line 81
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 6
+this.FeatureBackground();
+#line 82
+ testRunner.Given("I have selected a venue from the Location dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 83
+ testRunner.When("I click SaveandContinue", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 84
+ testRunner.Then("Delivery Mode error message should be displayed \"Select how is the training deliv" +
+                    "ered at this location\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("COUR-387 Display Error Message-Location/Delivery Mode/SaveandAddAnother")]
+        [NUnit.Framework.CategoryAttribute("CI")]
+        public virtual void COUR_387DisplayErrorMessage_LocationDeliveryModeSaveandAddAnother()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-387 Display Error Message-Location/Delivery Mode/SaveandAddAnother", null, new string[] {
+                        "CI"});
+#line 86
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 6
+this.FeatureBackground();
+#line 87
+ testRunner.Given("I have not selected a venue", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 88
+ testRunner.When("I click SaveandAddAnother", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 89
+ testRunner.Then("Location error message should be displayed \"Select location\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 90
+ testRunner.Then("Delivery Mode error message should be displayed \"Select how is the training deliv" +
+                    "ered at this location\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("COUR-387 Display Error Message-Location/Delivery Mode/SaveandContinue")]
+        [NUnit.Framework.CategoryAttribute("CI")]
+        public virtual void COUR_387DisplayErrorMessage_LocationDeliveryModeSaveandContinue()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-387 Display Error Message-Location/Delivery Mode/SaveandContinue", null, new string[] {
+                        "CI"});
+#line 92
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 6
+this.FeatureBackground();
+#line 93
+ testRunner.Given("I have not selected a venue", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 94
+ testRunner.When("I click SaveandContinue", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 95
+ testRunner.Then("Location error message should be displayed \"Select location\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 96
+ testRunner.Then("Delivery Mode error message should be displayed \"Select how is the training deliv" +
+                    "ered at this location\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

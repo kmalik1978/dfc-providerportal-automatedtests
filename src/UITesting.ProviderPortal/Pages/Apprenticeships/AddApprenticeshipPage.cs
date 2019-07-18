@@ -11,11 +11,15 @@ namespace UITesting.ProviderPortal.Pages.Apprenticeships
 
         private By ApprenticeshipInfo = By.Id("tinymce");
         private By ApprenticeshipInfoError = By.Id("infoRequired");
-        private By AddlCharactersApprenticeshipInfoErrorHeader = By.Id("error-hash-link-c-1");
-        private By BlankApprenticeshipInfoErrorHeader = By.Id("error-hash-link-a-1");
+        private By AddlCharactersApprenticeshipInfoErrorHeader = By.Id("error-hash-link-infoMax-1");
+        private By BlankApprenticeshipInfoErrorHeader = By.Id("error-hash-link-infoRequired-1");
 
         private By Website = By.Id("Website");
-        private By WebsiteError = By.XPath(".//*[@id='WebsiteContainer']/span[1]");
+        //private By WebsiteError = By.XPath(".//*[@id='WebsiteContainer']/span[1]");
+        //private By WebsiteError=By.Id("//*[@id='error-hash-link-Website-0']");
+        private By WebsiteError = By.XPath("//a[@href='#gov-label-Website']");
+        
+
 
         private By Email = By.Id("Email");
         private By EmailErrorHeader = By.Id("error-hash-link-Email-0");

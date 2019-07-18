@@ -118,11 +118,11 @@ namespace UITesting.ProviderPortal.Features.Apprenticeships
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Select Day Release location and choose to another")]
+        [NUnit.Framework.DescriptionAttribute("COUR-353 Select Day Release location and choose to add another")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void SelectDayReleaseLocationAndChooseToAnother()
+        public virtual void COUR_353SelectDayReleaseLocationAndChooseToAddAnother()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Select Day Release location and choose to another", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-353 Select Day Release location and choose to add another", null, new string[] {
                         "CI"});
 #line 29
 this.ScenarioInitialize(scenarioInfo);
@@ -142,11 +142,11 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Select Day Release location and add another")]
+        [NUnit.Framework.DescriptionAttribute("COUR-353 Select Day Release location and add another second time")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void SelectDayReleaseLocationAndAddAnother()
+        public virtual void COUR_353SelectDayReleaseLocationAndAddAnotherSecondTime()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Select Day Release location and add another", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-353 Select Day Release location and add another second time", null, new string[] {
                         "CI"});
 #line 36
 this.ScenarioInitialize(scenarioInfo);
@@ -169,24 +169,6 @@ this.FeatureBackground();
  testRunner.And("I enter 10 miles in radius field", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 44
  testRunner.And("I click Add another", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add 250 locations")]
-        [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void Add250Locations()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add 250 locations", null, new string[] {
-                        "CI"});
-#line 47
-this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 6
-this.FeatureBackground();
-#line 48
- testRunner.When("I add 250 locations for an apprenticeship", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             this.ScenarioCleanup();
         }

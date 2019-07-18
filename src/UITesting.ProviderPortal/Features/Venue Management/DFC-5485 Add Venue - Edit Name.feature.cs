@@ -80,7 +80,7 @@ namespace UITesting.ProviderPortal.Features.VenueManagement
 #line 9
  testRunner.Then("I am logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 10
- testRunner.Given("I have searched for UKPRN \"10002815\" and clicked search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I have searched for UKPRN \"10040838\" and clicked search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 11
  testRunner.When("I click to view my courses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 13
@@ -98,20 +98,20 @@ namespace UITesting.ProviderPortal.Features.VenueManagement
 #line 19
  testRunner.Then("I am on the Select Address page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 20
- testRunner.When("I select the address 120 Sandford Road Birmingham, B13 9DA", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I select the address 120 Sandford Road", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 21
- testRunner.And("I enter venue name Test Venue", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I enter variable venue nameTest Venue", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 22
  testRunner.And("I click continue to confirm page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Change name manually from Edit Venue Screen")]
+        [NUnit.Framework.DescriptionAttribute("DFC-5485 Change name manually from Edit Venue Screen")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void ChangeNameManuallyFromEditVenueScreen()
+        public virtual void DFC_5485ChangeNameManuallyFromEditVenueScreen()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Change name manually from Edit Venue Screen", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-5485 Change name manually from Edit Venue Screen", null, new string[] {
                         "CI"});
 #line 25
 this.ScenarioInitialize(scenarioInfo);

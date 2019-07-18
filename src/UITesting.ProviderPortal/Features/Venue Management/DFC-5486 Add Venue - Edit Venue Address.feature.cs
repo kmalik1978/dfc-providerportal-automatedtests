@@ -80,7 +80,7 @@ namespace UITesting.ProviderPortal.Features.VenueManagement
 #line 10
  testRunner.Then("I am logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 11
- testRunner.Given("I have searched for UKPRN \"10002815\" and clicked search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I have searched for UKPRN \"10040838\" and clicked search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 12
  testRunner.When("I click to view my courses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 14
@@ -98,9 +98,9 @@ namespace UITesting.ProviderPortal.Features.VenueManagement
 #line 20
  testRunner.Then("I am on the Select Address page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 21
- testRunner.When("I select the address 120 Sandford Road Birmingham, B13 9DA", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I select the address 120 Sandford Road", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 22
- testRunner.And("I enter venue name Test Venue", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I enter variable venue nameTest Venue", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 23
  testRunner.And("I click continue to confirm page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 24
@@ -109,10 +109,10 @@ namespace UITesting.ProviderPortal.Features.VenueManagement
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Change address manually during Add Venue")]
+        [NUnit.Framework.DescriptionAttribute("DFC-5486 Change address manually during Add Venue")]
         [NUnit.Framework.CategoryAttribute("CI")]
         [NUnit.Framework.TestCaseAttribute("CV23 9JR", null)]
-        public virtual void ChangeAddressManuallyDuringAddVenue(string postcode, string[] exampleTags)
+        public virtual void DFC_5486ChangeAddressManuallyDuringAddVenue(string postcode, string[] exampleTags)
         {
             string[] @__tags = new string[] {
                     "CI"};
@@ -120,7 +120,7 @@ namespace UITesting.ProviderPortal.Features.VenueManagement
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Change address manually during Add Venue", null, @__tags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-5486 Change address manually during Add Venue", null, @__tags);
 #line 27
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();

@@ -80,99 +80,103 @@ namespace UITesting.ProviderPortal.Features.Apprenticeships
 #line 9
  testRunner.Then("I am logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 10
- testRunner.Given("I have accessed the Apprenticeship Search page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I have searched for UKPRN \"10044200\" and clicked search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 11
- testRunner.When("I use apprenticeship search to search for Plum", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I click to view my courses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 12
- testRunner.Then("the Results are displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Given("I have accessed the Apprenticeship Search page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 13
- testRunner.Given("I have selected an apprenticeship", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.When("I use apprenticeship search to search for Plum", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 14
- testRunner.And("I have accessed the Apprenticeships training details page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Then("the Results are displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 15
- testRunner.When("I enter apprenticeships information \"Test Apprenticeship\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("I have selected an apprenticeship", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 16
- testRunner.And("I have entered a website \"http://www.google.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I have accessed the Apprenticeships training details page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 17
- testRunner.And("I have entered an email \"Testapp@gmail.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("I enter apprenticeships information \"Test Apprenticeship\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 18
- testRunner.And("I have entered a telephone \"07112234598\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I have entered a website \"http://www.google.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 19
- testRunner.And("I have entered contact details \" \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I have entered an email \"Testapp@gmail.com\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 20
- testRunner.And("I have clicked continue", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I have entered a telephone \"07112234598\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 21
+ testRunner.And("I have entered contact details \" \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 22
+ testRunner.And("I have clicked continue", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 23
  testRunner.Then("the apprenticeship delivery screen should be visible", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Select Apprenticeship location")]
+        [NUnit.Framework.DescriptionAttribute("COUR-615 Select Apprenticeship location Delivery Method")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void SelectApprenticeshipLocation()
+        public virtual void COUR_615SelectApprenticeshipLocationDeliveryMethod()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Select Apprenticeship location", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-615 Select Apprenticeship location Delivery Method", null, new string[] {
                         "CI"});
-#line 23
+#line 25
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 6
 this.FeatureBackground();
-#line 24
- testRunner.Given("I have accessed the apprenticeship delivery screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 25
- testRunner.And("I have selected locations as delivery type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 26
- testRunner.When("I press continue location", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("I have accessed the apprenticeship delivery screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 27
+ testRunner.And("I have selected locations as delivery type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 28
+ testRunner.When("I press continue location", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 29
  testRunner.Then("the Apprenticeships delivery options screen is displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Select employer address")]
+        [NUnit.Framework.DescriptionAttribute("COUR-615 Select employer address Delivery Method")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void SelectEmployerAddress()
+        public virtual void COUR_615SelectEmployerAddressDeliveryMethod()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Select employer address", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-615 Select employer address Delivery Method", null, new string[] {
                         "CI"});
-#line 29
+#line 31
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 6
 this.FeatureBackground();
-#line 30
- testRunner.Given("I have accessed the apprenticeship delivery screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 31
- testRunner.And("I have selected employers address as delivery type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 32
- testRunner.When("I press continue employer address", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("I have accessed the apprenticeship delivery screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 33
+ testRunner.And("I have selected employers address as delivery type", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 34
+ testRunner.When("I press continue employer address", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 35
  testRunner.Then("the national provider capability page should be delivered", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("No Option selected")]
+        [NUnit.Framework.DescriptionAttribute("COUR-615 No Option selected Delivery Method")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void NoOptionSelected()
+        public virtual void COUR_615NoOptionSelectedDeliveryMethod()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("No Option selected", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-615 No Option selected Delivery Method", null, new string[] {
                         "CI"});
-#line 35
+#line 37
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 6
 this.FeatureBackground();
-#line 36
- testRunner.Given("I have accessed the apprenticeship delivery screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 37
- testRunner.And("I have not selected an option", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 38
- testRunner.When("I press continue error", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("I have accessed the apprenticeship delivery screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 39
+ testRunner.And("I have not selected an option", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 40
+ testRunner.When("I press continue error", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 41
  testRunner.Then("an apprenticeships error message should be displayed \"Select Where will this appr" +
                     "enticeship training be delivered?\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden

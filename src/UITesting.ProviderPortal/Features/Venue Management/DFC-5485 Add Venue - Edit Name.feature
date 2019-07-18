@@ -7,7 +7,7 @@ Background:
 	Given I have accessed course directory as a provider
 	And I login as admin with user and password
 	Then I am logged in
-	Given I have searched for UKPRN "10002815" and clicked search
+	Given I have searched for UKPRN "10040838" and clicked search
 	When I click to view my courses
 	## End of Provider Search Steps
 	Given I have navigated to the Your Venues Pages
@@ -17,12 +17,12 @@ Background:
 	When I enter the following postcode b13 9da
 	And I click Find Address
 	Then I am on the Select Address page
-	When I select the address 120 Sandford Road Birmingham, B13 9DA
-	And I enter venue name Test Venue
+	When I select the address 120 Sandford Road
+	And I enter variable venue nameTest Venue
 	And I click continue to confirm page				
 
 @CI
-Scenario: Change name manually from Edit Venue Screen
+Scenario: DFC-5485 Change name manually from Edit Venue Screen
 Given I am on the edit venue name page
 	And I have cleared the venue name field
 	And I have entered a venue name

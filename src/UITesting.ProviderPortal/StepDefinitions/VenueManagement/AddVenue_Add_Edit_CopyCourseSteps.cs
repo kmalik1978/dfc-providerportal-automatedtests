@@ -44,6 +44,11 @@ namespace UITesting.ProviderPortal.StepDefinitions.VenueManagement
         [Given(@"I have added a new Venue ""(.*)""")]
         public void GivenIHaveAddedANewVenue(string strVenueName)
         {
+
+            // create unique venue name and store in scenrio context to re-use later
+            strVenueName = strVenueName + DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss");
+            ScenarioContext.Current["venue name"] = strVenueName;
+
             AddVenuePage addVenuePage = new AddVenuePage(webDriver);
             addVenuePage.ClickEnterAddressManuallyLink();
             AddVenueManualAddressPage addVenueManualAddressPage = new AddVenueManualAddressPage(webDriver);
@@ -52,6 +57,7 @@ namespace UITesting.ProviderPortal.StepDefinitions.VenueManagement
             addVenueManualAddressPage.AddTownCity("Del Venue City");
             addVenueManualAddressPage.AddPostCode("CV1 2WT");
             addVenueManualAddressPage.ClickContinue();
+            PageInteractionHelper.WaitForPageToLoad();
             AddVenueConfirmAddressPage addVenueConfirmAddressPage = new AddVenueConfirmAddressPage(webDriver);
             addVenueConfirmAddressPage.ClickConfirmContinue();
         }
@@ -60,7 +66,7 @@ namespace UITesting.ProviderPortal.StepDefinitions.VenueManagement
         public void GivenIHaveSelectedAsVenueFromTheVenueCheckboxList(string strVenueName)
         {
             AddCoursePage2 addCoursePage2 = new AddCoursePage2(webDriver);
-            addCoursePage2.SelectCheckBoxByValue(strVenueName);
+            addCoursePage2.SelectCheckBoxByValue(ScenarioContext.Current["venue name"].ToString());
         }
 
         [Given(@"I have selected a course")]
@@ -74,7 +80,7 @@ namespace UITesting.ProviderPortal.StepDefinitions.VenueManagement
         public void GivenIHaveSelectedAsVenueFromVenueDropdown(string strVenueName)
         {
             EditCourseRunDetails_YC3Page editCourseRunDetails_YC3Page = new EditCourseRunDetails_YC3Page(webDriver);
-            editCourseRunDetails_YC3Page.SelectVenueByName(strVenueName);
+            editCourseRunDetails_YC3Page.SelectVenueByName(ScenarioContext.Current["venue name"].ToString());
         }
 
         [When(@"I select the link to Add New Venue in the Edit Screen")]
@@ -98,13 +104,7 @@ namespace UITesting.ProviderPortal.StepDefinitions.VenueManagement
             CourseSummaryPage courseSummaryPage = new CourseSummaryPage(webDriver);
             courseSummaryPage.ClickEditCourseRun();
         }
-        
-        [When(@"I clicked the Copy Course")]
-        public void WhenIClickedTheCopyCourse()
-        {
-            CourseSummaryPage courseSummaryPage = new CourseSummaryPage(webDriver);
-            courseSummaryPage.ClickCopyCourse();
-        }
+       
         
         [Then(@"the First Page of Add Course should be displayed")]
         public void ThenTheFirstPageOfAddCourseShouldBeDisplayed()
@@ -143,12 +143,22 @@ namespace UITesting.ProviderPortal.StepDefinitions.VenueManagement
             addCourseSummaryPage.ClickNext();
         }
         
+
+
+
         [Then(@"the course should be added")]
         public void ThenTheCourseShouldBeAdded()
         {
             ViewYourCoursesPage viewYourCoursesPage = new ViewYourCoursesPage(webDriver);
         }
-        
+
+        [Then(@"the course should be deleted")]
+        public void ThenTheCourseShouldBeDeleted()
+        {
+            ViewYourCoursesPage viewYourCoursesPage = new ViewYourCoursesPage(webDriver);
+        }
+
+
         [Then(@"Second Page of Edit Course should be displayed")]
         public void ThenSecondPageOfEditCourseShouldBeDisplayed()
         {
@@ -202,8 +212,16 @@ namespace UITesting.ProviderPortal.StepDefinitions.VenueManagement
         public void GivenIHaveSelectedAsVenueFromVenueDropdownInTheCopyCoursePage(string strVenueName)
         {
             CopyCoursePage copyCoursePage  = new CopyCoursePage(webDriver);
-            copyCoursePage.SelectVenueByName(strVenueName);
+            copyCoursePage.SelectVenueByName(ScenarioContext.Current["venue name"].ToString());
         }
+
+        [When(@"I click delete")]
+        public void WhenIClickDelete()
+        {
+            CourseSummaryPage courseSummaryPage = new CourseSummaryPage(webDriver);
+            courseSummaryPage.ClickDeleteConfirm();
+        }
+
 
     }
 }

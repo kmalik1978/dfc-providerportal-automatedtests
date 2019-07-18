@@ -20,7 +20,7 @@ Background:
 	When I click Next Button
 
 @CI
-Scenario: Enter Work Based Options when adding a course field changes
+Scenario: DFC-6667 Enter Work Based Options when adding a course field changes
 	When I enter the following in the course name field Course AutoTestAddWorkBasedOption1
 	And I enter the following in the cost field 999.00
 	And I click on the Work Based Option Radio Button
@@ -31,7 +31,7 @@ Scenario: Enter Work Based Options when adding a course field changes
 	And the course region selection options are shown
 
 	@CI
-Scenario: Publish course with Work Based Options - Single Region
+Scenario: DFC-6667 Publish course with Work Based Options - Single Region
 	When I enter the following in the course name field Course AutoTestAddWorkBasedOption2
 	And I enter the following in the cost field 1999.00
 	And I click on the Work Based Option Radio Button
@@ -40,8 +40,18 @@ Scenario: Publish course with Work Based Options - Single Region
 	And I select duration length 9
 	And I click Publish
 
+	@CI
+Scenario: DFC-6667 Publish course with Work Based Options - No Region Selected_BUG_COUR-1183
+	When I enter the following in the course name field Course AutoTestAddWorkBasedOption2
+	And I enter the following in the cost field 1999.00
+	And I click on the Work Based Option Radio Button
+	And I click on No to National coverage
+	And I select duration length 9
+	And I click Publish leading to error
+	Then error message for field Sub Region states Select at least one region
+
 @CI
-Scenario: Publish course with Work Based Options - National Coverage
+Scenario: DFC-6667 Publish course with Work Based Options - National Coverage
 	When I enter the following in the course name field Course AutoTestAddWorkBasedOption2
 	And I enter the following in the cost field 1999.00
 	And I click on the Work Based Option Radio Button
@@ -50,7 +60,7 @@ Scenario: Publish course with Work Based Options - National Coverage
 	And I click Publish
 
 @CI
-Scenario: Publish course with Work Based Options - National Flag not answered
+Scenario: DFC-6667 Publish course with Work Based Options - National Flag not answered
 	When I enter the following in the course name field Course AutoTestAddWorkBasedOption2
 	And I enter the following in the cost field 1999.00
 	And I click on the Work Based Option Radio Button

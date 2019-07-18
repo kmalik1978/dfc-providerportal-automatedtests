@@ -7,7 +7,8 @@ namespace UITesting.ProviderPortal.Pages.Apprenticeships
 {
     public class ConfirmDetailsPage : BasePage
     {
-        private static String PAGE_TITLE = "Check your answers before saving";
+        private static String PAGE_TITLE = "Check and publish to the course directory";
+        private By publishBtn = By.Id("next");
 
 
         public ConfirmDetailsPage(IWebDriver webDriver) : base(webDriver)
@@ -21,6 +22,12 @@ namespace UITesting.ProviderPortal.Pages.Apprenticeships
             return PageInteractionHelper.VerifyPageHeading(this.GetPageHeading(), PAGE_TITLE);
         }
 
+        public AppPublishedPage ClickPublish()
+        {
+            FormCompletionHelper.ClickElement(publishBtn);
+            PageInteractionHelper.WaitForPageToLoad();
+            return new AppPublishedPage(webDriver);
+        }
 
     }
 }

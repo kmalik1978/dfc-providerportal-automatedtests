@@ -93,11 +93,11 @@ namespace UITesting.ProviderPortal.Features.VenueManagement
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Commit Edited Venue Name and Address")]
+        [NUnit.Framework.DescriptionAttribute("DFC-5794 Commit Edited Venue Name and Address")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void CommitEditedVenueNameAndAddress()
+        public virtual void DFC_5794CommitEditedVenueNameAndAddress()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Commit Edited Venue Name and Address", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-5794 Commit Edited Venue Name and Address", null, new string[] {
                         "CI"});
 #line 19
 this.ScenarioInitialize(scenarioInfo);
@@ -121,7 +121,7 @@ this.FeatureBackground();
 #line 27
  testRunner.When("I edit the venue address to b14 7rz", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 28
- testRunner.And("I chose the following address 8 York Road Kings Heath, Birmingham, B14 7RZ", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I chose the following address 8 York Road", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 29
  testRunner.And("I click continue on edit venue address page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 30
@@ -139,11 +139,11 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Commit Edited Venue Name")]
+        [NUnit.Framework.DescriptionAttribute("DFC-5794 Commit Edited Venue Name")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void CommitEditedVenueName()
+        public virtual void DFC_5794CommitEditedVenueName()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Commit Edited Venue Name", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-5794 Commit Edited Venue Name", null, new string[] {
                         "CI"});
 #line 37
 this.ScenarioInitialize(scenarioInfo);
@@ -173,11 +173,11 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Commit Edited Venue Address")]
+        [NUnit.Framework.DescriptionAttribute("DFC-5794 Commit Edited Venue Address")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void CommitEditedVenueAddress()
+        public virtual void DFC_5794CommitEditedVenueAddress()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Commit Edited Venue Address", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-5794 Commit Edited Venue Address", null, new string[] {
                         "CI"});
 #line 49
 this.ScenarioInitialize(scenarioInfo);
@@ -191,7 +191,7 @@ this.FeatureBackground();
 #line 52
  testRunner.When("I edit the venue address to b14 7rz", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 53
- testRunner.And("I chose the following address 8 York Road Kings Heath, Birmingham, B14 7RZ", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I chose the following address 8 York Road", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 54
  testRunner.And("I click continue on edit venue address page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 55

@@ -11,6 +11,7 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
     public class ViewYourCoursesPage : TestSupport.BasePage
     {
         private static String PAGE_TITLE = "Your published courses";
+        private static By Title = By.XPath ("/html/body/div[4]/div/header/div/div/div/div[1]/h1"); 
         private By successMsg = By.XPath(".//*[@id='main-content']/div/div/div[1]/h1");
         private static By ViewCourseDescriptionLink = By.XPath("//*[@id='0']");
         private static By showFirstCourseDescriptionPopupLink = By.XPath(".//*[@id='67e5fb91-adad-41ae-b5d8-76a4aefae674']/span[4]/a");
@@ -89,7 +90,7 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
 
         /*Search Your Courses tests*/
         private By SearchText = By.Id("Search");
-        private By SearchErrMessage = By.XPath("//*[@id='results']/div/div/div/p");
+        private By SearchErrMessage = By.XPath("//*[@id='results']/div/div/div/span[1]");
 
         /*Select link*/
         private By SelectLink = By.LinkText("Select");
@@ -98,6 +99,7 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
         {
             PageInteractionHelper.WaitForPageToLoad();
             webDriver.FindElementWait(SearchText, 60);
+            //webDriver.FindElementWait(Title, 60);
             if (!PageInteractionHelper.IsElementPresent(successMsg))
             {
                 SelfVerify();

@@ -18,8 +18,8 @@ namespace UITesting.ProviderPortal.Features.VenueManagement
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.4.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("COUR-11 Delete a Venue")]
-    public partial class COUR_11DeleteAVenueFeature
+    [NUnit.Framework.DescriptionAttribute("COUR-11 Delete Venue")]
+    public partial class COUR_11DeleteVenueFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
@@ -31,7 +31,7 @@ namespace UITesting.ProviderPortal.Features.VenueManagement
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "COUR-11 Delete a Venue", "\tIn order to manage my venues\r\n\tAs a provider\r\n\tI want to be able to delete venue" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "COUR-11 Delete Venue", "\tIn order to manage my venues\r\n\tAs a provider\r\n\tI want to be able to delete venue" +
                     "s", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
@@ -80,7 +80,7 @@ namespace UITesting.ProviderPortal.Features.VenueManagement
 #line 9
  testRunner.Then("I am logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 10
- testRunner.Given("I have searched for UKPRN \"10001800\" and clicked search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I have searched for UKPRN \"10007348\" and clicked search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 11
  testRunner.When("I click to view my courses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 12
@@ -91,11 +91,11 @@ namespace UITesting.ProviderPortal.Features.VenueManagement
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Validate after clicking Delete button")]
+        [NUnit.Framework.DescriptionAttribute("COUR-11 Validate after clicking Delete button")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void ValidateAfterClickingDeleteButton()
+        public virtual void COUR_11ValidateAfterClickingDeleteButton()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Validate after clicking Delete button", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-11 Validate after clicking Delete button", null, new string[] {
                         "CI"});
 #line 15
 this.ScenarioInitialize(scenarioInfo);
@@ -113,54 +113,54 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Click cancel to stop deletion of venue")]
+        [NUnit.Framework.DescriptionAttribute("COUR-11 Click cancel to stop deletion of venue")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void ClickCancelToStopDeletionOfVenue()
+        public virtual void COUR_11ClickCancelToStopDeletionOfVenue()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Click cancel to stop deletion of venue", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-11 Click cancel to stop deletion of venue", null, new string[] {
                         "CI"});
-#line 20
+#line 21
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 6
 this.FeatureBackground();
-#line 21
- testRunner.Given("I have searched for \"TestDeleteVenueNoCourse\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 22
- testRunner.And("clicked the delete link for \"TestDeleteVenueNoCourse\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I have searched for \"TestDeleteVenueNoCourse\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 23
- testRunner.And("I have clicked the cancel link for \"TestDeleteVenueNoCourse\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("clicked the delete link for \"TestDeleteVenueNoCourse\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 24
- testRunner.Then("I should be able to see a Edit and Delete Link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("I have clicked the cancel link for \"TestDeleteVenueNoCourse\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 25
+ testRunner.Then("I should be able to see a Edit and Delete Link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 26
  testRunner.And("Venue \"TestDeleteVenueNoCourse\" should not be deleted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Delete Venue with no course")]
+        [NUnit.Framework.DescriptionAttribute("COUR-11 Delete Venue with no course")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void DeleteVenueWithNoCourse()
+        public virtual void COUR_11DeleteVenueWithNoCourse()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Delete Venue with no course", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-11 Delete Venue with no course", null, new string[] {
                         "CI"});
-#line 27
+#line 29
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 6
 this.FeatureBackground();
-#line 28
- testRunner.Given("I have searched for \"TestDeleteVenueNoCourse\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 29
- testRunner.And("clicked the delete link for \"TestDeleteVenueNoCourse\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 30
- testRunner.Then("I should be able to see a confirm delete button and a cancel link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Given("I have searched for \"TestDeleteVenueNoCourse\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 31
- testRunner.When("I have clicked the confirm delete button for \"TestDeleteVenueNoCourse\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("clicked the delete link for \"TestDeleteVenueNoCourse\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 32
- testRunner.Then("the venue should be deleted \"TestDeleteVenueNoCourse\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I should be able to see a confirm delete button and a cancel link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 33
+ testRunner.When("I have clicked the confirm delete button for \"TestDeleteVenueNoCourse\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 34
+ testRunner.Then("the venue should be deleted \"TestDeleteVenueNoCourse\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 35
  testRunner.And("a delete message should be displayed \"Venue TestDeleteVenueNoCourse has been dele" +
                     "ted\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
@@ -168,26 +168,26 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Delete Venue with course associated with Venue")]
+        [NUnit.Framework.DescriptionAttribute("COUR-11 Delete Venue with course associated with Venue")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void DeleteVenueWithCourseAssociatedWithVenue()
+        public virtual void COUR_11DeleteVenueWithCourseAssociatedWithVenue()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Delete Venue with course associated with Venue", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-11 Delete Venue with course associated with Venue", null, new string[] {
                         "CI"});
-#line 35
+#line 38
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 6
 this.FeatureBackground();
-#line 36
+#line 39
  testRunner.Given("I have searched for \"TestDeleteVenueWithCourse\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 37
+#line 40
  testRunner.And("there is a course associated with the venue \"TestDeleteVenueWithCourse\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 38
- testRunner.And("clicked the delete link for \"TestDeleteVenueWithCourse\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 41
+ testRunner.And("clicked the delete link for \"TestDeleteVenueWithCourse\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 44
  testRunner.Then("the venue \"TestDeleteVenueWithCourse\" should not be deleted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 42
+#line 45
  testRunner.And("a message should be displayed \"There are live courses associated with this venue." +
                     " Please delete these courses or assign a different venue to the courses before d" +
                     "eleting the venue\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

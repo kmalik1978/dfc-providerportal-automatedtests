@@ -15,10 +15,10 @@ Background:
 	Then I am on the Edit venue details page
 
 @CI
-Scenario: Edit Venue Address
+Scenario: DFC-5489 Edit Venue Address
 	When I click Change Address on Edit Venue page
 	Then I am on Edit Venue Address page
 	When I edit the venue address to b14 7rz
-	And I chose the following address 8 York Road Kings Heath, Birmingham, B14 7RZ
+	And I chose the following address 8 York Road
 	And I click continue on edit venue address page
 	Then I am on the Edit venue details page

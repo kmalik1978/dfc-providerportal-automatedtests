@@ -14,10 +14,10 @@ namespace UITesting.ProviderPortal.Pages.Venue_Management
         private static String PAGE_TITLE_ELEMENT = "//*[@id='main-content']/div/div[1]/div/div/h1";
         private static String VENUE_DATA = "//*[@id='live']/table/tbody/tr[1]/td[2]";  //"//*[@id='live']/div[1]/label"
         private static String ARCH_TAB= "//*[@id='tab_archived']";
-        private static String ADD_VENUE_BUTTON = "//*[@id='venueSearchResultForm']/div/div/div/div[1]/button";  //*[@id="venueSearchResultForm"]/div/div/div/a[2]/div/button
+        private static String ADD_VENUE_BUTTON = "//*[@id='venueSearchResultForm']/div/div[1]/button";   //*[@id="venueSearchResultForm"]/div/div[1]/button/text()
         private By venueBanner = By.XPath(".//*[@id='qual']");
         private By firstRecord = By.XPath(".//*[@id='live']/table/tbody/tr[1]/td[2]");   //(".//*[@id='live']/div[1]/label"); 
-        private By firstVenue = By.XPath(".//*[@id='live']/table/tbody/tr[1]/td[1]");
+        private By firstVenue = By.XPath(".//*[@id='live']/table/tbody/tr[1]/td[1]");    
         private By prnText = By.Id("SearchTerm");//UKPrn
         private By searchButton = By.Id("venueProvider");//search
         private By firstEditlink = By.XPath(".//*[@id='live']/table/tbody/tr[1]/td[4]/a");   //(".//*[@id='live']/div[1]/label/a[1]"); 
@@ -97,6 +97,7 @@ namespace UITesting.ProviderPortal.Pages.Venue_Management
         internal void VenueEdited(string venueName)
         {
             PageInteractionHelper.IsElementDisplayed(firstVenue);
+            //string venName = webDriver.FindElement(firstVenue).GetAttribute("innerText");
             FormCompletionHelper.VerifyText(firstVenue, venueName);
         }
 

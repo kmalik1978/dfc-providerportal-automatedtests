@@ -98,20 +98,20 @@ namespace UITesting.ProviderPortal.Features.VenueManagement
 #line 20
  testRunner.Then("I am on the Select Address page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 21
- testRunner.When("I select the address 120 Sandford Road Birmingham, B13 9DA", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I select the address 120 Sandford Road", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 22
- testRunner.And("I enter venue name Academy Of Contemporary Music", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I enter variable venue nameAcademy Of Contemporary Music", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 23
  testRunner.And("I click continue to confirm page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("User Confirms Details")]
+        [NUnit.Framework.DescriptionAttribute("DFC-5624 User Confirms Details")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void UserConfirmsDetails()
+        public virtual void DFC_5624UserConfirmsDetails()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User Confirms Details", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-5624 User Confirms Details", null, new string[] {
                         "CI"});
 #line 27
 this.ScenarioInitialize(scenarioInfo);

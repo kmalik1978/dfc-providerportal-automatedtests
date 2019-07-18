@@ -71,11 +71,11 @@ namespace UITesting.ProviderPortal.Features.CourseManagement
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit Course Venue")]
+        [NUnit.Framework.DescriptionAttribute("DFC-4830 Edit Course Venue")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void EditCourseVenue()
+        public virtual void DFC_4830EditCourseVenue()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit Course Venue", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-4830 Edit Course Venue", null, new string[] {
                         "CI"});
 #line 7
 this.ScenarioInitialize(scenarioInfo);
@@ -87,7 +87,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 10
  testRunner.Then("I am logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 11
- testRunner.Given("I have searched for UKPRN \"10032433\" and clicked search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I have searched for UKPRN \"10040849\" and clicked search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 12
  testRunner.When("I click to view my courses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 14
@@ -105,7 +105,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 22
  testRunner.Given("I have logged to course directory as a provider", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 23
- testRunner.And("I have searched for UKPRN \"10032433\" and clicked search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I have searched for UKPRN \"10040849\" and clicked search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 24
  testRunner.And("I have clicked View Courses button to see a list of courses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 25

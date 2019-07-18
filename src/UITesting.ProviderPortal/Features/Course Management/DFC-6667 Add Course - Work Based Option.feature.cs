@@ -101,11 +101,11 @@ namespace UITesting.ProviderPortal.Features.CourseManagement
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Enter Work Based Options when adding a course field changes")]
+        [NUnit.Framework.DescriptionAttribute("DFC-6667 Enter Work Based Options when adding a course field changes")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void EnterWorkBasedOptionsWhenAddingACourseFieldChanges()
+        public virtual void DFC_6667EnterWorkBasedOptionsWhenAddingACourseFieldChanges()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Enter Work Based Options when adding a course field changes", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-6667 Enter Work Based Options when adding a course field changes", null, new string[] {
                         "CI"});
 #line 23
 this.ScenarioInitialize(scenarioInfo);
@@ -134,11 +134,11 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Publish course with Work Based Options - Single Region")]
+        [NUnit.Framework.DescriptionAttribute("DFC-6667 Publish course with Work Based Options - Single Region")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void PublishCourseWithWorkBasedOptions_SingleRegion()
+        public virtual void DFC_6667PublishCourseWithWorkBasedOptions_SingleRegion()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Publish course with Work Based Options - Single Region", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-6667 Publish course with Work Based Options - Single Region", null, new string[] {
                         "CI"});
 #line 34
 this.ScenarioInitialize(scenarioInfo);
@@ -165,11 +165,13 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Publish course with Work Based Options - National Coverage")]
+        [NUnit.Framework.DescriptionAttribute("DFC-6667 Publish course with Work Based Options - No Region Selected_BUG_COUR-118" +
+            "3")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void PublishCourseWithWorkBasedOptions_NationalCoverage()
+        public virtual void DFC_6667PublishCourseWithWorkBasedOptions_NoRegionSelected_BUG_COUR_1183()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Publish course with Work Based Options - National Coverage", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-6667 Publish course with Work Based Options - No Region Selected_BUG_COUR-118" +
+                    "3", null, new string[] {
                         "CI"});
 #line 44
 this.ScenarioInitialize(scenarioInfo);
@@ -184,39 +186,70 @@ this.FeatureBackground();
 #line 47
  testRunner.And("I click on the Work Based Option Radio Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 48
- testRunner.And("I click on Yes to National coverage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I click on No to National coverage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 49
  testRunner.And("I select duration length 9", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 50
+ testRunner.And("I click Publish leading to error", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 51
+ testRunner.Then("error message for field Sub Region states Select at least one region", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("DFC-6667 Publish course with Work Based Options - National Coverage")]
+        [NUnit.Framework.CategoryAttribute("CI")]
+        public virtual void DFC_6667PublishCourseWithWorkBasedOptions_NationalCoverage()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-6667 Publish course with Work Based Options - National Coverage", null, new string[] {
+                        "CI"});
+#line 54
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 7
+this.FeatureBackground();
+#line 55
+ testRunner.When("I enter the following in the course name field Course AutoTestAddWorkBasedOption2" +
+                    "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 56
+ testRunner.And("I enter the following in the cost field 1999.00", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 57
+ testRunner.And("I click on the Work Based Option Radio Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 58
+ testRunner.And("I click on Yes to National coverage", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 59
+ testRunner.And("I select duration length 9", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 60
  testRunner.And("I click Publish", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Publish course with Work Based Options - National Flag not answered")]
+        [NUnit.Framework.DescriptionAttribute("DFC-6667 Publish course with Work Based Options - National Flag not answered")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void PublishCourseWithWorkBasedOptions_NationalFlagNotAnswered()
+        public virtual void DFC_6667PublishCourseWithWorkBasedOptions_NationalFlagNotAnswered()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Publish course with Work Based Options - National Flag not answered", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-6667 Publish course with Work Based Options - National Flag not answered", null, new string[] {
                         "CI"});
-#line 53
+#line 63
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 7
 this.FeatureBackground();
-#line 54
+#line 64
  testRunner.When("I enter the following in the course name field Course AutoTestAddWorkBasedOption2" +
                     "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 55
+#line 65
  testRunner.And("I enter the following in the cost field 1999.00", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 56
+#line 66
  testRunner.And("I click on the Work Based Option Radio Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 57
+#line 67
  testRunner.And("I select duration length 9", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 58
+#line 68
  testRunner.And("I click Publish leading to error", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 59
+#line 69
  testRunner.Then("error message for field National Check states Choose if you can deliver this cour" +
                     "se anywhere in England", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden

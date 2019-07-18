@@ -26,14 +26,14 @@ Background:
 	Then the classroom and employer based delivery page should be delivered
 
 @CI
-Scenario: Select Day Release location and choose to another
+Scenario: COUR-353 Select Day Release location and choose to add another
 	When I select Day Release option
 	And I select a location
 	And I enter 10 miles in radius field
 	And I click Add another
 
 @CI
-Scenario: Select Day Release location and add another
+Scenario: COUR-353 Select Day Release location and add another second time
 	When I select Day Release option
 	And I select a location
 	And I enter 10 miles in radius field
@@ -43,6 +43,7 @@ Scenario: Select Day Release location and add another
 	And I enter 10 miles in radius field
 	And I click Add another
 
-@CI
-Scenario: Add 250 locations
-	When I add 250 locations for an apprenticeship
+# Test takes too long to run as part of CI
+#@CI
+#Scenario: Add 250 locations
+#	When I add 250 locations for an apprenticeship

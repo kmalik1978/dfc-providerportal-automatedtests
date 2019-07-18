@@ -18,13 +18,13 @@ Background:
 	When I enter the following postcode b13 9da
 	And I click Find Address
 	Then I am on the Select Address page
-	When I select the address 120 Sandford Road Birmingham, B13 9DA
-	And I enter venue name Academy Of Contemporary Music
+	When I select the address 120 Sandford Road
+	And I enter variable venue nameAcademy Of Contemporary Music
 	And I click continue to confirm page
 
 
 @CI
-Scenario: User Confirms Details
+Scenario: DFC-5624 User Confirms Details
 	When I am on the Add Venue Confirm details page
 	And On the Confirmation Page I click continue
 	Then I am on the View All Live Venues Page

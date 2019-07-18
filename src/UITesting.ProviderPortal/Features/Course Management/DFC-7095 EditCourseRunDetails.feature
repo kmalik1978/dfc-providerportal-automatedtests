@@ -14,7 +14,7 @@ Given I have accessed course directory as a provider
 	Then Edit Course details screen should be displayed
 
 @CI
-Scenario: Edit Course Name with valid data 
+Scenario: DFC-7095 Edit Course Name with valid data 
 	Given I have accessed the selected course run data
 	And I have entered the following course name "Award in Computerised Accounts-Edited"	
 	When I  Save the data
@@ -23,14 +23,14 @@ Scenario: Edit Course Name with valid data
 	Then I should be able to view the changed data
 
 @CI
-Scenario: Edit Course Name with blank data
+Scenario: DFC-7095 Edit Course Name with blank data
 	Given I have accessed the selected course run data
 	And I have entered the following course name " "
 	When I  Save the data
 	Then the following course name message should be displayed "Enter course name"
 
 @CI
-Scenario: Edit course run with valid defined start date when Classroom mode is selected and selecting Attendance and Attendance Pattern
+Scenario: DFC-7095 Edit course run with valid defined start date when Classroom mode is selected and selecting Attendance and Attendance Pattern
 	Given I have accessed the selected course run data
 	And I have selected "Online" as delivery mode
 	And I have selected Start Date "Defined Start Date"
@@ -43,7 +43,7 @@ Scenario: Edit course run with valid defined start date when Classroom mode is s
 	Then I should be able to view the changed data	
 
 @CI
-Scenario: Edit course run with invalid defined start date when Classroom mode is selected
+Scenario: DFC-7095 Edit course run with invalid defined start date when Classroom mode is selected
 	Given I have accessed the selected course run data
 	And I have selected "Classroom" as delivery mode
 	And I have selected Start Date "Defined Start Date"
@@ -54,7 +54,7 @@ Scenario: Edit course run with invalid defined start date when Classroom mode is
 	And the error summary should have the error "Invalid date"
 
 @CI
-Scenario: Edit course run with no defined start date when Classroom mode is selected
+Scenario: DFC-7095 Edit course run with no defined start date when Classroom mode is selected
 	Given I have accessed the selected course run data
 	And I have selected "Classroom" as delivery mode
 	And I have selected Start Date "Defined Start Date"
@@ -63,19 +63,21 @@ Scenario: Edit course run with no defined start date when Classroom mode is sele
 	Then the following error date message should be displayed "Enter start date"
 
 @CI
-Scenario: Edit course run by selecting classrroom mode and a venue is selected
+Scenario: DFC-7095 Edit course run by selecting classrroom mode and a venue is selected
 	Given I have accessed the selected course run data
 	And I have selected "Classroom" as delivery mode
 	And I have selected Start Date "Defined Start Date"
 	And I have entered "25" in Day, "04" in Month and "2021" in Year
 	And I have entered selected a venue from the dropdown
+	And I have selected "Weekend" in Attendance
+	And I have selected "Part-Time" in attendance pattern
 	When I  Save the data
 	Then the course run should be saved and the changed course run link should be visible
 	When I click the link to the changed course run
 	Then I should be able to view the changed data with the new venue
 
 @CI
-Scenario: Edit course run by entering a value in cost and leave cost description blank
+Scenario: DFC-7095 Edit course run by entering a value in cost and leave cost description blank
 	Given I have accessed the selected course run data
 	And I have selected entered a value in cost "200"
 	And I have left cost description as blank
@@ -85,7 +87,7 @@ Scenario: Edit course run by entering a value in cost and leave cost description
 	Then I should be able to view the changed data with the cost
 
 @CI
-Scenario: Edit course run by entering a value in cost description and leave cost blank
+Scenario: DFC-7095 Edit course run by entering a value in cost description and leave cost blank
 	Given I have accessed the selected course run data
 	And I have entered a value in cost description "Please call for course cost"
 	And I have left cost as blank
@@ -95,7 +97,7 @@ Scenario: Edit course run by entering a value in cost description and leave cost
 	Then I should be able to view the changed data with the cost description
 
 @CI
-Scenario: Edit course run by leaving cost description and leave cost blank
+Scenario: DFC-7095 Edit course run by leaving cost description and leave cost blank
 	Given I have accessed the selected course run data
 	And I have left cost and cost description as blank
 	And I have left cost description as blank
@@ -103,7 +105,7 @@ Scenario: Edit course run by leaving cost description and leave cost blank
 	Then the following cost message should be displayed "Enter cost or cost description"
 
 @CI
-Scenario: Edit course run with duration
+Scenario: DFC-7095 Edit course run with duration
 	Given I have accessed the selected course run data
 	And I have entered a value in Duration "6"
 	And I have selected "Months" in the duration unit
@@ -112,14 +114,14 @@ Scenario: Edit course run with duration
 	Then I should be able to view the changed data with the duration
 
 @CI
-Scenario: Edit course run with blank duration
+Scenario: DFC-7095 Edit course run with blank duration
 	Given I have accessed the selected course run data
 	And I have entered a blank value in Duration " "
 	When I  Save the data
-	Then the following duration message should be displayed "Enter Duration"
+	Then the following duration message should be displayed "Enter duration"
 
 @CI
-Scenario: Edit course with Online and a valid URL
+Scenario: DFC-7095 Edit course with Online and a valid URL
 	Given I have accessed the selected course run data
 	And I have selected "Online" as delivery mode
 	And I have entered following URL "http://www.ips-apprenticeships.co.uk/"
@@ -129,7 +131,7 @@ Scenario: Edit course with Online and a valid URL
 	Then I should be able to view the changed data with the Url
 
 @CI
-Scenario: Edit course with Online and a invalid URL
+Scenario: DFC-7095 Edit course with Online and a invalid URL
 	Given I have accessed the selected course run data
 	And I have selected "Online" as delivery mode
 	And I have entered following URL "http://w..ips-apprenticeships"
@@ -137,7 +139,7 @@ Scenario: Edit course with Online and a invalid URL
 	Then the following URL message should be displayed "The format of URL is incorrect"
 
 @CI
-Scenario: No changes should be done once cancel is clicked
+Scenario: DFC-7095 No changes should be done once cancel is clicked
 	Given I have accessed the selected course run data
 	And I have selected "Online" as delivery mode
 	When I select Cancel 

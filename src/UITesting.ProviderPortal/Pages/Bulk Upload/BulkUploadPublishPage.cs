@@ -9,8 +9,8 @@ namespace UITesting.ProviderPortal.Pages.Bulk_Upload
 {
     public class BulkUploadPublishPage : BasePage
     {
-        private static String PAGE_TITLE = "Publish Your Courses";
-        private By PublishBtn = By.Id("publish");
+        private static String PAGE_TITLE = "Publish your file";
+        private By PublishBtn = By.Id("next");
 
 
         public BulkUploadPublishPage(IWebDriver webDriver) : base(webDriver)
@@ -20,7 +20,7 @@ namespace UITesting.ProviderPortal.Pages.Bulk_Upload
 
         protected override bool SelfVerify()
         {
-            PageInteractionHelper.WaitForPageToLoad();
+            webDriver.FindElementWait(PublishBtn, 60);
             return PageInteractionHelper.VerifyPageHeading(this.GetPageHeading(), PAGE_TITLE);
         }
 

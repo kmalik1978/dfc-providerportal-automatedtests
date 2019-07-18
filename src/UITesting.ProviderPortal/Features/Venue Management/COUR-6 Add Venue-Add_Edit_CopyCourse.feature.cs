@@ -80,18 +80,18 @@ namespace UITesting.ProviderPortal.Features.VenueManagement
 #line 9
  testRunner.Then("I am logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 10
- testRunner.Given("I have searched for UKPRN \"10001800\" and clicked search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I have searched for UKPRN \"10033145\" and clicked search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 11
  testRunner.When("I click to view my courses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add a Venue when adding a new course")]
+        [NUnit.Framework.DescriptionAttribute("COUR-6 Add a Venue when adding a new course")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void AddAVenueWhenAddingANewCourse()
+        public virtual void COUR_6AddAVenueWhenAddingANewCourse()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add a Venue when adding a new course", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-6 Add a Venue when adding a new course", null, new string[] {
                         "CI"});
 #line 14
 this.ScenarioInitialize(scenarioInfo);
@@ -137,52 +137,54 @@ this.FeatureBackground();
 #line 33
  testRunner.When("I select duration length 9", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 34
- testRunner.When("I Select study mode Part-time", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I select duration unit Months", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 35
- testRunner.When("I Select attendance mode Daytime", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I Select study mode Part-time", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 36
- testRunner.And("I click Publish", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("I Select attendance mode Daytime", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 37
- testRunner.Then("the Add Course Summary Page should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("I click Publish", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 38
- testRunner.And("I have clicked Accept and Publish", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Then("the Add Course Summary Page should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 39
+ testRunner.And("I have clicked Accept and Publish", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 40
  testRunner.Then("the course should be added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add a Venue when editing an existing course")]
+        [NUnit.Framework.DescriptionAttribute("COUR-6 Add a Venue when editing an existing course")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void AddAVenueWhenEditingAnExistingCourse()
+        public virtual void COUR_6AddAVenueWhenEditingAnExistingCourse()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add a Venue when editing an existing course", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-6 Add a Venue when editing an existing course", null, new string[] {
                         "CI"});
-#line 41
+#line 44
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 6
 this.FeatureBackground();
-#line 42
- testRunner.Given("I have selected a course", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 43
- testRunner.When("I clicked the Edit course information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 44
- testRunner.Then("Second Page of Edit Course should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 45
- testRunner.Given("I have accessed the selected course run data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I have selected a course", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 46
- testRunner.And("I have selected \"Classroom\" as delivery mode", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.When("I clicked the Edit course information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 47
- testRunner.And("I have selected Start Date \"Defined Start Date\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Then("Second Page of Edit Course should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 48
- testRunner.And("I have entered \"25\" in Day, \"04\" in Month and \"2021\" in Year", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I have accessed the selected course run data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 49
- testRunner.When("I select the link to Add New Venue in the Edit Screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I have selected \"Classroom\" as delivery mode", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 50
- testRunner.Then("Add venue screen should be displayed.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("I have selected Start Date \"Defined Start Date\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 51
+ testRunner.And("I have entered \"25\" in Day, \"04\" in Month and \"2021\" in Year", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 52
+ testRunner.When("I select the link to Add New Venue in the Edit Screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 53
+ testRunner.Then("Add venue screen should be displayed.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 54
  testRunner.Given("I have added a new Venue \"TestAddVenue_EditCourse\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 55
  testRunner.Then("the venue \"TestAddVenue_EditCourse\" should be present in the Venue List", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
@@ -198,43 +200,47 @@ this.FeatureBackground();
  testRunner.And("I Select attendance mode \"Daytime\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 61
  testRunner.When("I  Save the data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 64
- testRunner.Then("the course should be added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add a Venue when copying an existing course")]
+        [NUnit.Framework.DescriptionAttribute("COUR-6 Add a Venue when copying an existing course")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void AddAVenueWhenCopyingAnExistingCourse()
+        public virtual void COUR_6AddAVenueWhenCopyingAnExistingCourse()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add a Venue when copying an existing course", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("COUR-6 Add a Venue when copying an existing course", null, new string[] {
                         "CI"});
-#line 67
+#line 65
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 6
 this.FeatureBackground();
-#line 68
- testRunner.Given("I have selected a classrom course", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 69
- testRunner.When("I clicked the Copy Course", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 70
+#line 66
+ testRunner.Given("I have selected a course run to copy", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 67
  testRunner.Then("Copy Course Page should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 75
+#line 68
+ testRunner.Given("I have entered the following course name \"XXX - COUR-6AddAVenueWhenCopyingAnExist" +
+                    "ingCourse\" when copying a course", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 69
+ testRunner.Given("I have selected \"Classroom\" as delivery mode when copying a course", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 70
+ testRunner.And("I have selected Start Date \"Defined Start Date\" when copying a course", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 71
+ testRunner.And("I have entered \"25\" in Day, \"04\" in Month and \"2021\" in Year when copying a cours" +
+                    "e", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 72
  testRunner.When("I select the link to Add New Venue inthe copy course screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 76
+#line 73
  testRunner.Then("Add venue screen should be displayed.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 77
+#line 74
  testRunner.Given("I have added a new Venue \"TestAddVenue_CopyCourse\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 82
+#line 75
  testRunner.Given("I have selected \"TestAddVenue_CopyCourse\" as venue from Venue Dropdown in the cop" +
                     "y course page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 87
+#line 76
  testRunner.When("I  Save the data in the copy course page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 90
- testRunner.Then("the course should be added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

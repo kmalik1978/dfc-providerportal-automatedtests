@@ -7,6 +7,8 @@ Background:
 	Given I have accessed course directory as a provider
 	And I login as admin with user and password
 	Then I am logged in
+	Given I have searched for UKPRN "10044200" and clicked search
+	When I click to view my courses
 	Given I have accessed the Apprenticeship Search page
 	When I use apprenticeship search to search for Plumbing
 	Then the Results are displayed
@@ -27,21 +29,21 @@ Background:
 	Then I am on the employer based delivery page
 
 @CI
-Scenario: Select EastMidlands regions and the first sub-region
+Scenario: COUR-388 Select EastMidlands regions and the first sub-region
 	When I expand the East Midlands region
 	And I select the first sub-region
 	And I click Continue on Add employer based delivery
 	Then I am on the confirm details page
 
 @CI
-Scenario: Select EastMidlands regions and select All sub-regions
+Scenario: COUR-388 Select EastMidlands regions and select All sub-regions
 	When I expand the East Midlands region
 	And I select the all sub-regions
 	And I click Continue on Add employer based delivery
 	Then I am on the confirm details page
 
 @CI
-Scenario: Select All regions and the first sub-region for each
+Scenario: COUR-388 Select All regions and the first sub-region for each
 	When I expand the Yorkshire region
 	And I select the first sub-region
 	Then I close the Yorkshire region
@@ -82,7 +84,7 @@ Scenario: Select All regions and the first sub-region for each
 	Then I am on the confirm details page
 
 @CI
-Scenario: Select All regions and select All sub-regions
+Scenario: COUR-388 Select All regions and select All sub-regions
 	When I expand the East Midlands region
 	And I select the all sub-regions
 	Then I close the East Midlands region

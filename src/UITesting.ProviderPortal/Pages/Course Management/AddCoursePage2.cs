@@ -17,7 +17,7 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
         private By courseId = By.Id("CourseProviderReference");
         private By courseIdError = By.XPath(".//*[@id='sectionCourseProviderReference']/div/span[1]");    
         private By courseURL = By.Id("Url");
-        private By courseURLError = By.XPath(".//*[@id='sectionUrl']/div/span[1]");                        
+        private By courseURLError = By.XPath(".//*[@id='sectionUrl']/div/span[1]");                       //*[@id="sectionUrl"]/div/span[1] 
         private By courseCost = By.Id("Cost");
         private By courseCostError = By.XPath(".//*[@id='costContainer']/span[1]");                       
         private By courseCostInvalidLength = By.XPath(".//*[@id='costContainer']/span[1]");
@@ -62,11 +62,12 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
         private By fullPartTimeButtons = By.Id("FullPartTimeRadioButtons");
         private By attendancePatternButtons = By.Id("AttendancePatternRadioButtons");
         private By workBasedOptionButton = By.Id("WorkBased");
+        private By regionError = By.XPath(".//*[@id='regions-section']/span[2]");
         private By firstRegion = By.XPath(".//*[@id='SelectRegionCheckBoxes']/details[1]/summary");
         private By courseRegionSelector = By.Id("RegionItemsCheckboxList");
         private By courseRegionSelectorFirstField = By.Id("RegionName-1");
-        private By nationalTrue = By.Id("National_true");
-        private By nationalFalse = By.Id("National_false");
+        private By nationalTrue = By.XPath(".//*[@id='nationalRadioButtons']/div[1]/label");       //By.Id("National_true");
+        private By nationalFalse = By.XPath(".//*[@id='nationalRadioButtons']/div[2]/label");      //By.Id("National_false"); 
         private By nationalError = By.XPath(".//*[@id='sectionRegions']/div/div/div[1]/fieldset/span");
         private By AddNewVenueLink = By.Id("addNewVenue");
         //variable
@@ -97,6 +98,7 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
         internal void ClickAddNewVenueLink()
         {
             FormCompletionHelper.ClickElement(AddNewVenueLink);
+            PageInteractionHelper.WaitForPageToLoad();
         }
 
         public AddCoursePage2 clickOnline()
@@ -154,6 +156,7 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
 
         protected override bool SelfVerify()
         {
+            PageInteractionHelper.WaitForPageToLoad();
             return PageInteractionHelper.VerifyPageHeading(this.GetPageHeading(), PAGE_TITLE);
         }
 
@@ -232,7 +235,7 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
                     PageInteractionHelper.WaitForElementToBePresent(courseURLError);
                     PageInteractionHelper.IsElementDisplayed(courseURLError);
                     errortxt = webDriver.FindElement(courseURLError).GetAttribute("innerText");
-                    if (errorMsg != errortxt)
+                    if (!errortxt.Contains(errorMsg))
                     {
                         throw new Exception("Incorrect Error message displayed");
                     }
@@ -242,18 +245,27 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
                     PageInteractionHelper.WaitForElementToBePresent(courseNameError);
                     PageInteractionHelper.IsElementDisplayed(courseNameError);
                     errortxt = webDriver.FindElement(courseNameError).GetAttribute("innerText");
-                    if (errorMsg != errortxt)
+                    if (!errortxt.Contains(errorMsg))
                     {
                         throw new Exception("Incorrect Error message displayed");
                     }
                     return new AddCoursePage2(webDriver);
 
-
                 case "National Check":
                     PageInteractionHelper.WaitForElementToBePresent(nationalError);
                     PageInteractionHelper.IsElementDisplayed(nationalError);
                     errortxt = webDriver.FindElement(nationalError).GetAttribute("innerText");
-                    if (errorMsg != errortxt)
+                    if (!errortxt.Contains(errorMsg))
+                    {
+                        throw new Exception("Incorrect Error message displayed");
+                    }
+                    return new AddCoursePage2(webDriver);
+
+                case "Sub Region":
+                    PageInteractionHelper.WaitForElementToBePresent(regionError);
+                    PageInteractionHelper.IsElementDisplayed(regionError);
+                    errortxt = webDriver.FindElement(regionError).GetAttribute("innerText");
+                    if (!errortxt.Contains(errorMsg))
                     {
                         throw new Exception("Incorrect Error message displayed");
                     }
@@ -263,7 +275,7 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
                     PageInteractionHelper.WaitForElementToBePresent(courseCostError);
                     PageInteractionHelper.IsElementDisplayed(courseCostError);
                     errortxt = webDriver.FindElement(courseCostError).GetAttribute("innerText");
-                    if (errorMsg != errortxt)
+                    if (!errortxt.Contains(errorMsg))
                     {
                         throw new Exception("Incorrect Error message displayed");
                     }
@@ -273,7 +285,7 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
                     PageInteractionHelper.WaitForElementToBePresent(courseCostInvalidLength);
                     PageInteractionHelper.IsElementDisplayed(courseCostInvalidLength);
                     errortxt = webDriver.FindElement(courseCostInvalidLength).GetAttribute("innerText");
-                    if (errorMsg != errortxt)
+                    if (!errortxt.Contains(errorMsg))
                     {
                         throw new Exception("Incorrect Error message displayed");
                     }
@@ -283,7 +295,7 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
                     PageInteractionHelper.WaitForElementToBePresent(courseCostInvalid);
                     PageInteractionHelper.IsElementDisplayed(courseCostInvalid);
                     errortxt = webDriver.FindElement(courseCostInvalid).GetAttribute("innerText");
-                    if (errorMsg != errortxt)
+                    if (!errortxt.Contains(errorMsg))
                     {
                         throw new Exception("Incorrect Error message displayed");
                     }
@@ -293,7 +305,7 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
                     PageInteractionHelper.WaitForElementToBePresent(courseIdError);
                     PageInteractionHelper.IsElementDisplayed(courseIdError);
                     errortxt = webDriver.FindElement(courseIdError).GetAttribute("innerText");
-                    if (errorMsg != errortxt)
+                    if (!errortxt.Contains(errorMsg))
                     {
                         throw new Exception("Incorrect Error message displayed");
                     }
@@ -303,7 +315,7 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
                     PageInteractionHelper.WaitForElementToBePresent(costDescriptionError);
                     PageInteractionHelper.IsElementDisplayed(costDescriptionError);
                     errortxt = webDriver.FindElement(costDescriptionError).GetAttribute("innerText");
-                    if (errorMsg != errortxt)
+                    if (!errortxt.Contains(errorMsg))
                     {
                         throw new Exception("Incorrect Error message displayed");
                     }
@@ -313,7 +325,7 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
                     PageInteractionHelper.WaitForElementToBePresent(DayError);
                     PageInteractionHelper.IsElementDisplayed(DayError);
                     errortxt = webDriver.FindElement(DayError).GetAttribute("innerText");
-                    if (errorMsg != errortxt)
+                    if (!errortxt.Contains(errorMsg))
                     {
                         throw new Exception("Incorrect Error message displayed");
                     }
@@ -323,7 +335,7 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
                     PageInteractionHelper.WaitForElementToBePresent(MonthError);
                     PageInteractionHelper.IsElementDisplayed(MonthError);
                     errortxt = webDriver.FindElement(MonthError).GetAttribute("innerText");
-                    if (errorMsg != errortxt)
+                    if (!errortxt.Contains(errorMsg))
                     {
                         throw new Exception("Incorrect Error message displayed");
                     }
@@ -333,7 +345,7 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
                     PageInteractionHelper.WaitForElementToBePresent(YearError);
                     PageInteractionHelper.IsElementDisplayed(YearError);
                     errortxt = webDriver.FindElement(YearError).GetAttribute("innerText");
-                    if (errorMsg != errortxt)
+                    if (!errortxt.Contains(errorMsg))
                     {
                         throw new Exception("Incorrect Error message displayed");
                     }
@@ -343,7 +355,7 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
                     PageInteractionHelper.WaitForElementToBePresent(StartDateRequiredError);
                     PageInteractionHelper.IsElementDisplayed(StartDateRequiredError);
                     errortxt = webDriver.FindElement(StartDateRequiredError).GetAttribute("innerText");
-                    if (errorMsg != errortxt)
+                    if (!errortxt.Contains(errorMsg))
                     {
                         throw new Exception("Incorrect Error message displayed");
                     }
@@ -353,7 +365,7 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
                     PageInteractionHelper.WaitForElementToBePresent(PasttDateError);
                     PageInteractionHelper.IsElementDisplayed(PasttDateError);
                     errortxt = webDriver.FindElement(PasttDateError).GetAttribute("innerText");
-                    if (errorMsg != errortxt)
+                    if (!errortxt.Contains(errorMsg))
                     {
                         throw new Exception("Incorrect Error message displayed");
                     }
@@ -363,7 +375,7 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
                     PageInteractionHelper.WaitForElementToBePresent(FutureDateError);
                     PageInteractionHelper.IsElementDisplayed(FutureDateError);
                     errortxt = webDriver.FindElement(FutureDateError).GetAttribute("innerText");
-                    if (errorMsg != errortxt)
+                    if (!errortxt.Contains(errorMsg))
                     {
                         throw new Exception("Incorrect Error message displayed");
                     }
@@ -373,7 +385,7 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
                     PageInteractionHelper.WaitForElementToBePresent(InvalidDateError);
                     PageInteractionHelper.IsElementDisplayed(InvalidDateError);
                     errortxt = webDriver.FindElement(InvalidDateError).GetAttribute("innerText");
-                    if (errorMsg != errortxt)
+                    if (!errortxt.Contains(errorMsg))
                     {
                         throw new Exception("Incorrect Error message displayed");
                     }
@@ -383,7 +395,7 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
                     PageInteractionHelper.WaitForElementToBePresent(DurationError);
                     PageInteractionHelper.IsElementDisplayed(DurationError);
                     errortxt = webDriver.FindElement(DurationError).GetAttribute("innerText");
-                    if (errorMsg != errortxt)
+                    if (!errortxt.Contains(errorMsg))
                     {
                         throw new Exception("Incorrect Error message displayed");
                     }
@@ -614,11 +626,6 @@ namespace UITesting.ProviderPortal.Pages.Course_Management
             FormCompletionHelper.ClickElement(courseRegionSelectorFirstField);
             return new AddCoursePage2(webDriver);
         }
-
-        /*internal void SelectVenueByName(string text)
-        {
-            FormCompletionHelper.SelectFromDropDownByText(webDriver.FindElement(Venue), text);
-        }*/
 
     }
 }

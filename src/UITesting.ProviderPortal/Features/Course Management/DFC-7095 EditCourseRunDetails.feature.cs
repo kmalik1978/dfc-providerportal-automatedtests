@@ -93,11 +93,11 @@ testRunner.Given("I have accessed course directory as a provider", ((string)(nul
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit Course Name with valid data")]
+        [NUnit.Framework.DescriptionAttribute("DFC-7095 Edit Course Name with valid data")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void EditCourseNameWithValidData()
+        public virtual void DFC_7095EditCourseNameWithValidData()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit Course Name with valid data", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-7095 Edit Course Name with valid data", null, new string[] {
                         "CI"});
 #line 17
 this.ScenarioInitialize(scenarioInfo);
@@ -121,11 +121,11 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit Course Name with blank data")]
+        [NUnit.Framework.DescriptionAttribute("DFC-7095 Edit Course Name with blank data")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void EditCourseNameWithBlankData()
+        public virtual void DFC_7095EditCourseNameWithBlankData()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit Course Name with blank data", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-7095 Edit Course Name with blank data", null, new string[] {
                         "CI"});
 #line 26
 this.ScenarioInitialize(scenarioInfo);
@@ -145,13 +145,13 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit course run with valid defined start date when Classroom mode is selected and" +
-            " selecting Attendance and Attendance Pattern")]
+        [NUnit.Framework.DescriptionAttribute("DFC-7095 Edit course run with valid defined start date when Classroom mode is sel" +
+            "ected and selecting Attendance and Attendance Pattern")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void EditCourseRunWithValidDefinedStartDateWhenClassroomModeIsSelectedAndSelectingAttendanceAndAttendancePattern()
+        public virtual void DFC_7095EditCourseRunWithValidDefinedStartDateWhenClassroomModeIsSelectedAndSelectingAttendanceAndAttendancePattern()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit course run with valid defined start date when Classroom mode is selected and" +
-                    " selecting Attendance and Attendance Pattern", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-7095 Edit course run with valid defined start date when Classroom mode is sel" +
+                    "ected and selecting Attendance and Attendance Pattern", null, new string[] {
                         "CI"});
 #line 33
 this.ScenarioInitialize(scenarioInfo);
@@ -179,11 +179,13 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit course run with invalid defined start date when Classroom mode is selected")]
+        [NUnit.Framework.DescriptionAttribute("DFC-7095 Edit course run with invalid defined start date when Classroom mode is s" +
+            "elected")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void EditCourseRunWithInvalidDefinedStartDateWhenClassroomModeIsSelected()
+        public virtual void DFC_7095EditCourseRunWithInvalidDefinedStartDateWhenClassroomModeIsSelected()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit course run with invalid defined start date when Classroom mode is selected", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-7095 Edit course run with invalid defined start date when Classroom mode is s" +
+                    "elected", null, new string[] {
                         "CI"});
 #line 46
 this.ScenarioInitialize(scenarioInfo);
@@ -212,11 +214,13 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit course run with no defined start date when Classroom mode is selected")]
+        [NUnit.Framework.DescriptionAttribute("DFC-7095 Edit course run with no defined start date when Classroom mode is select" +
+            "ed")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void EditCourseRunWithNoDefinedStartDateWhenClassroomModeIsSelected()
+        public virtual void DFC_7095EditCourseRunWithNoDefinedStartDateWhenClassroomModeIsSelected()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit course run with no defined start date when Classroom mode is selected", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-7095 Edit course run with no defined start date when Classroom mode is select" +
+                    "ed", null, new string[] {
                         "CI"});
 #line 57
 this.ScenarioInitialize(scenarioInfo);
@@ -240,11 +244,11 @@ this.FeatureBackground();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit course run by selecting classrroom mode and a venue is selected")]
+        [NUnit.Framework.DescriptionAttribute("DFC-7095 Edit course run by selecting classrroom mode and a venue is selected")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void EditCourseRunBySelectingClassrroomModeAndAVenueIsSelected()
+        public virtual void DFC_7095EditCourseRunBySelectingClassrroomModeAndAVenueIsSelected()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit course run by selecting classrroom mode and a venue is selected", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-7095 Edit course run by selecting classrroom mode and a venue is selected", null, new string[] {
                         "CI"});
 #line 66
 this.ScenarioInitialize(scenarioInfo);
@@ -262,230 +266,238 @@ this.FeatureBackground();
 #line 71
  testRunner.And("I have entered selected a venue from the dropdown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 72
- testRunner.When("I  Save the data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I have selected \"Weekend\" in Attendance", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 73
- testRunner.Then("the course run should be saved and the changed course run link should be visible", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("I have selected \"Part-Time\" in attendance pattern", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 74
- testRunner.When("I click the link to the changed course run", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I  Save the data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 75
+ testRunner.Then("the course run should be saved and the changed course run link should be visible", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 76
+ testRunner.When("I click the link to the changed course run", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 77
  testRunner.Then("I should be able to view the changed data with the new venue", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit course run by entering a value in cost and leave cost description blank")]
+        [NUnit.Framework.DescriptionAttribute("DFC-7095 Edit course run by entering a value in cost and leave cost description b" +
+            "lank")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void EditCourseRunByEnteringAValueInCostAndLeaveCostDescriptionBlank()
+        public virtual void DFC_7095EditCourseRunByEnteringAValueInCostAndLeaveCostDescriptionBlank()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit course run by entering a value in cost and leave cost description blank", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-7095 Edit course run by entering a value in cost and leave cost description b" +
+                    "lank", null, new string[] {
                         "CI"});
-#line 78
+#line 80
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 6
 this.FeatureBackground();
-#line 79
- testRunner.Given("I have accessed the selected course run data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 80
- testRunner.And("I have selected entered a value in cost \"200\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 81
- testRunner.And("I have left cost description as blank", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I have accessed the selected course run data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 82
- testRunner.When("I  Save the data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I have selected entered a value in cost \"200\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 83
- testRunner.Then("the course run should be saved and the changed course run link should be visible", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("I have left cost description as blank", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 84
- testRunner.When("I click the link to the changed course run", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I  Save the data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 85
+ testRunner.Then("the course run should be saved and the changed course run link should be visible", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 86
+ testRunner.When("I click the link to the changed course run", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 87
  testRunner.Then("I should be able to view the changed data with the cost", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit course run by entering a value in cost description and leave cost blank")]
+        [NUnit.Framework.DescriptionAttribute("DFC-7095 Edit course run by entering a value in cost description and leave cost b" +
+            "lank")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void EditCourseRunByEnteringAValueInCostDescriptionAndLeaveCostBlank()
+        public virtual void DFC_7095EditCourseRunByEnteringAValueInCostDescriptionAndLeaveCostBlank()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit course run by entering a value in cost description and leave cost blank", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-7095 Edit course run by entering a value in cost description and leave cost b" +
+                    "lank", null, new string[] {
                         "CI"});
-#line 88
+#line 90
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 6
 this.FeatureBackground();
-#line 89
- testRunner.Given("I have accessed the selected course run data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 90
- testRunner.And("I have entered a value in cost description \"Please call for course cost\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 91
- testRunner.And("I have left cost as blank", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I have accessed the selected course run data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 92
- testRunner.When("I  Save the data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I have entered a value in cost description \"Please call for course cost\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 93
- testRunner.Then("the course run should be saved and the changed course run link should be visible", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("I have left cost as blank", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 94
- testRunner.When("I click the link to the changed course run", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I  Save the data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 95
+ testRunner.Then("the course run should be saved and the changed course run link should be visible", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 96
+ testRunner.When("I click the link to the changed course run", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 97
  testRunner.Then("I should be able to view the changed data with the cost description", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit course run by leaving cost description and leave cost blank")]
+        [NUnit.Framework.DescriptionAttribute("DFC-7095 Edit course run by leaving cost description and leave cost blank")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void EditCourseRunByLeavingCostDescriptionAndLeaveCostBlank()
+        public virtual void DFC_7095EditCourseRunByLeavingCostDescriptionAndLeaveCostBlank()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit course run by leaving cost description and leave cost blank", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-7095 Edit course run by leaving cost description and leave cost blank", null, new string[] {
                         "CI"});
-#line 98
+#line 100
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 6
 this.FeatureBackground();
-#line 99
- testRunner.Given("I have accessed the selected course run data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 100
- testRunner.And("I have left cost and cost description as blank", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 101
- testRunner.And("I have left cost description as blank", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I have accessed the selected course run data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 102
- testRunner.When("I  Save the data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I have left cost and cost description as blank", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 103
+ testRunner.And("I have left cost description as blank", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 104
+ testRunner.When("I  Save the data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 105
  testRunner.Then("the following cost message should be displayed \"Enter cost or cost description\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit course run with duration")]
+        [NUnit.Framework.DescriptionAttribute("DFC-7095 Edit course run with duration")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void EditCourseRunWithDuration()
+        public virtual void DFC_7095EditCourseRunWithDuration()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit course run with duration", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-7095 Edit course run with duration", null, new string[] {
                         "CI"});
-#line 106
+#line 108
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 6
 this.FeatureBackground();
-#line 107
- testRunner.Given("I have accessed the selected course run data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 108
- testRunner.And("I have entered a value in Duration \"6\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 109
- testRunner.And("I have selected \"Months\" in the duration unit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I have accessed the selected course run data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 110
- testRunner.When("I  Save the data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I have entered a value in Duration \"6\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 111
- testRunner.When("I click the link to the changed course run", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I have selected \"Months\" in the duration unit", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 112
+ testRunner.When("I  Save the data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 113
+ testRunner.When("I click the link to the changed course run", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 114
  testRunner.Then("I should be able to view the changed data with the duration", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit course run with blank duration")]
+        [NUnit.Framework.DescriptionAttribute("DFC-7095 Edit course run with blank duration")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void EditCourseRunWithBlankDuration()
+        public virtual void DFC_7095EditCourseRunWithBlankDuration()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit course run with blank duration", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-7095 Edit course run with blank duration", null, new string[] {
                         "CI"});
-#line 115
+#line 117
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 6
 this.FeatureBackground();
-#line 116
- testRunner.Given("I have accessed the selected course run data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 117
- testRunner.And("I have entered a blank value in Duration \" \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 118
- testRunner.When("I  Save the data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("I have accessed the selected course run data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 119
- testRunner.Then("the following duration message should be displayed \"Enter Duration\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("I have entered a blank value in Duration \" \"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 120
+ testRunner.When("I  Save the data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 121
+ testRunner.Then("the following duration message should be displayed \"Enter duration\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit course with Online and a valid URL")]
+        [NUnit.Framework.DescriptionAttribute("DFC-7095 Edit course with Online and a valid URL")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void EditCourseWithOnlineAndAValidURL()
+        public virtual void DFC_7095EditCourseWithOnlineAndAValidURL()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit course with Online and a valid URL", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-7095 Edit course with Online and a valid URL", null, new string[] {
                         "CI"});
-#line 122
+#line 124
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 6
 this.FeatureBackground();
-#line 123
- testRunner.Given("I have accessed the selected course run data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 124
- testRunner.And("I have selected \"Online\" as delivery mode", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 125
- testRunner.And("I have entered following URL \"http://www.ips-apprenticeships.co.uk/\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I have accessed the selected course run data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 126
- testRunner.When("I  Save the data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I have selected \"Online\" as delivery mode", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 127
- testRunner.Then("the course run should be saved and the changed course run link should be visible", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("I have entered following URL \"http://www.ips-apprenticeships.co.uk/\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 128
- testRunner.When("I click the link to the changed course run", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I  Save the data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 129
+ testRunner.Then("the course run should be saved and the changed course run link should be visible", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 130
+ testRunner.When("I click the link to the changed course run", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 131
  testRunner.Then("I should be able to view the changed data with the Url", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit course with Online and a invalid URL")]
+        [NUnit.Framework.DescriptionAttribute("DFC-7095 Edit course with Online and a invalid URL")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void EditCourseWithOnlineAndAInvalidURL()
+        public virtual void DFC_7095EditCourseWithOnlineAndAInvalidURL()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit course with Online and a invalid URL", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-7095 Edit course with Online and a invalid URL", null, new string[] {
                         "CI"});
-#line 132
+#line 134
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 6
 this.FeatureBackground();
-#line 133
- testRunner.Given("I have accessed the selected course run data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 134
- testRunner.And("I have selected \"Online\" as delivery mode", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 135
- testRunner.And("I have entered following URL \"http://w..ips-apprenticeships\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("I have accessed the selected course run data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 136
- testRunner.When("I  Save the data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I have selected \"Online\" as delivery mode", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 137
+ testRunner.And("I have entered following URL \"http://w..ips-apprenticeships\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 138
+ testRunner.When("I  Save the data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 139
  testRunner.Then("the following URL message should be displayed \"The format of URL is incorrect\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("No changes should be done once cancel is clicked")]
+        [NUnit.Framework.DescriptionAttribute("DFC-7095 No changes should be done once cancel is clicked")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void NoChangesShouldBeDoneOnceCancelIsClicked()
+        public virtual void DFC_7095NoChangesShouldBeDoneOnceCancelIsClicked()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("No changes should be done once cancel is clicked", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-7095 No changes should be done once cancel is clicked", null, new string[] {
                         "CI"});
-#line 140
+#line 142
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 6
 this.FeatureBackground();
-#line 141
- testRunner.Given("I have accessed the selected course run data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 142
- testRunner.And("I have selected \"Online\" as delivery mode", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 143
- testRunner.When("I select Cancel", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("I have accessed the selected course run data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 144
+ testRunner.And("I have selected \"Online\" as delivery mode", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 145
+ testRunner.When("I select Cancel", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 146
  testRunner.Then("changes should not be saved", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

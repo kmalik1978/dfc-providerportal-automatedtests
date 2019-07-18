@@ -79,10 +79,6 @@ testRunner.Given("I have accessed course directory as a provider", ((string)(nul
 testRunner.And("I login as admin with user and password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9
 testRunner.Then("I am logged in", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 10
-testRunner.Given("I have searched for UKPRN \"10002815\" and clicked search", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 11
-testRunner.When("I click to view my courses", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 13
 testRunner.Given("I am on Add a Provider Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 14
@@ -97,11 +93,11 @@ testRunner.And("I should see a search icon", ((string)(null)), ((TechTalk.SpecFl
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("User enters invalid input")]
+        [NUnit.Framework.DescriptionAttribute("DFC-5112 User enters invalid input_BUG_COUR-1159")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void UserEntersInvalidInput()
+        public virtual void DFC_5112UserEntersInvalidInput_BUG_COUR_1159()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User enters invalid input", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-5112 User enters invalid input_BUG_COUR-1159", null, new string[] {
                         "CI"});
 #line 20
 this.ScenarioInitialize(scenarioInfo);
@@ -132,11 +128,11 @@ testRunner.Then("I should see an error message UKPRN is 8 digit number starting 
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("User enters valid input")]
+        [NUnit.Framework.DescriptionAttribute("DFC-5112 User enters valid input")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void UserEntersValidInput()
+        public virtual void DFC_5112UserEntersValidInput()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User enters valid input", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-5112 User enters valid input", null, new string[] {
                         "CI"});
 #line 31
 this.ScenarioInitialize(scenarioInfo);
@@ -152,11 +148,11 @@ testRunner.Then("I should not see the error message on clicking \"Find\"", ((str
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("User enters valid UKPRN and sees the following input")]
+        [NUnit.Framework.DescriptionAttribute("DFC-5114 User enters valid UKPRN and sees the following input")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void UserEntersValidUKPRNAndSeesTheFollowingInput()
+        public virtual void DFC_5114UserEntersValidUKPRNAndSeesTheFollowingInput()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User enters valid UKPRN and sees the following input", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-5114 User enters valid UKPRN and sees the following input", null, new string[] {
                         "CI"});
 #line 36
 this.ScenarioInitialize(scenarioInfo);
@@ -168,9 +164,9 @@ testRunner.When("I enter a valid input \"10002370\"", ((string)(null)), ((TechTa
 #line 38
 testRunner.Then("I should not see the error message on clicking \"Find\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 39
-testRunner.Then("The label will be \"Course Directory Status\" and the data will be \"Onboarded\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.Then("The label will be \"Course directory status\" and the data will be \"Onboarded\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 40
-testRunner.Then("The label will be \"UKPRN Status\" and the data value will be \"Active\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.Then("The label will be \"UKPRN status\" and the data value will be \"Active\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 41
 testRunner.And("The label will be \"UKPRN\" and the data value will be the entered regiestration nu" +
                     "mber", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -187,7 +183,7 @@ testRunner.And("The label wll be \"Email\" and the data value will be the Provid
 testRunner.And("The label will be \"Telephone\" and the data value will be the Provider\'s telephone" +
                     "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 47
-testRunner.And("an \"Add Provider\" button at the bottom", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And("an \"Add provider\" button at the bottom", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }

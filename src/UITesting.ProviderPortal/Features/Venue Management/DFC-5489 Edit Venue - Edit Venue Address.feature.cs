@@ -93,11 +93,11 @@ namespace UITesting.ProviderPortal.Features.VenueManagement
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit Venue Address")]
+        [NUnit.Framework.DescriptionAttribute("DFC-5489 Edit Venue Address")]
         [NUnit.Framework.CategoryAttribute("CI")]
-        public virtual void EditVenueAddress()
+        public virtual void DFC_5489EditVenueAddress()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit Venue Address", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DFC-5489 Edit Venue Address", null, new string[] {
                         "CI"});
 #line 18
 this.ScenarioInitialize(scenarioInfo);
@@ -111,7 +111,7 @@ this.FeatureBackground();
 #line 21
  testRunner.When("I edit the venue address to b14 7rz", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 22
- testRunner.And("I chose the following address 8 York Road Kings Heath, Birmingham, B14 7RZ", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I chose the following address 8 York Road", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 23
  testRunner.And("I click continue on edit venue address page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 24
